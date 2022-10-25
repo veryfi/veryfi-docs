@@ -1,0 +1,1520 @@
+{
+  "info": {
+    "_postman_id": "09f56c19-6cdb-469d-b8a1-282d50fd33ac",
+    "name": "Partner API Requests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create a User",
+      "_postman_id": "cb423104-b76e-11ea-b3de-0242ac130004",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "X-Veryfi-Request-Timestamp",
+            "type": "text",
+            "value": "{TIMESTAMP}"
+          },
+          {
+            "key": "X-Veryfi-Request-Signature",
+            "type": "text",
+            "value": "{SIGNATURE}"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"user_id\": \"12345678-abcd-1234-abcd-123456789abc\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v7/partner/users/",
+        "description": "Creates a new user"
+      },
+      "response": []
+    },
+    {
+      "name": "Get a User",
+      "_postman_id": "b55f0a4a-b770-11ea-b3de-0242ac130004",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "X-Veryfi-Request-Timestamp",
+            "type": "text",
+            "value": "{TIMESTAMP}"
+          },
+          {
+            "key": "X-Veryfi-Request-Signature",
+            "type": "text",
+            "value": "{SIGNATURE}"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v7/partner/users/{user_id}/",
+        "description": "Retrieves an existing user"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete a User",
+      "_postman_id": "a53ad7db-fc2a-4aa2-be03-3eb04848b369",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "X-Veryfi-Request-Timestamp",
+            "type": "text",
+            "value": "{TIMESTAMP}"
+          },
+          {
+            "key": "X-Veryfi-Request-Signature",
+            "type": "text",
+            "value": "{SIGNATURE}"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v7/partner/users/{user_id}/",
+        "description": "Deletes an existing user"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Receipt (File Binary)",
+      "_postman_id": "87768f48-44d9-4159-9fb5-c211ca853ae5",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/tmp/invoice.jpg"
+            },
+            {
+              "key": "file_name",
+              "value": "invoice.jpg",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/",
+        "description": "Extracts data from the receipt submitted as mutlipart form-data"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Receipt (File Base64)",
+      "_postman_id": "9a0b23e8-6c05-4b79-a4b0-c64c1fc5e360",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_name\": \"invoice.png\",\n\t\"file_data\": \"image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQYV2NgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII=\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/",
+        "description": "Extracts data from the receipt sent as Base64 encoded string"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Receipt (File URL)",
+      "_postman_id": "c39d8b18-0dd0-474e-b8a9-4cc58d675a88",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_url\": \"https://cdn.example.com/invoice.png\", \n\t\"file_name\": \"invoice.png\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/",
+        "description": "Extracts data from the receipt using provided https url to a file"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Invoice (File Binary)",
+      "_postman_id": "081ea853-5235-4bc8-906f-5a7fb5c15286",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/tmp/invoice.jpg"
+            },
+            {
+              "key": "file_name",
+              "value": "invoice.jpg",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/",
+        "description": "Extracts data from the invoice submitted as mutlipart form-data"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Invoice (File Base64)",
+      "_postman_id": "acd32891-a294-471e-8b86-e16b926d4c86",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_name\": \"invoice.png\",\n\t\"file_data\": \"image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQYV2NgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII=\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/",
+        "description": "Extracts data from the invoice sent as Base64 encoded string"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Invoice (File URL)",
+      "_postman_id": "522bb12b-e445-4396-a07d-7db3d3eb86fb",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_url\": \"https://cdn.example.com/invoice.png\", \n\t\"file_name\": \"invoice.png\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/",
+        "description": "Extracts data from the invoice using provided https url to a file"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Purchase Order (File Binary)",
+      "_postman_id": "da380d7c-a119-4fda-b59a-2df12597a4b1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/tmp/invoice.jpg"
+            },
+            {
+              "key": "file_name",
+              "value": "invoice.jpg",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/",
+        "description": "Extracts data from the purchase order submitted as mutlipart form-data"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Purchase Order (File Base64)",
+      "_postman_id": "6f3c2bd1-ae11-41b5-bf40-d7e225cbc41d",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_name\": \"invoice.png\",\n\t\"file_data\": \"image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQYV2NgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII=\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/",
+        "description": "Extracts data from the purchase order sent as Base64 encoded string"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Purchase Order (File URL)",
+      "_postman_id": "cf3a7e34-685e-4818-9ca8-f91db8299904",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_url\": \"https://cdn.example.com/invoice.png\", \n\t\"file_name\": \"invoice.png\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/",
+        "description": "Extracts data from the purchase order using provided https url to a file"
+      },
+      "response": []
+    },
+    {
+      "name": "Search Receipts/Invoices/Purchase Orders",
+      "_postman_id": "c5d01397-0b1b-45d7-a084-387ec0c65d13",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0",
+            "type": "text"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v8/partner/documents/?q={keyword}&created__gte={YYYY-MM-DD+HH:MM:SS}&created__lt={YYYY-MM-DD+HH:MM:SS}",
+        "description": "Retrieves all the documents matching specified filters"
+      },
+      "response": []
+    },
+    {
+      "name": "Get a Receipt/Invoice/Purchase Order",
+      "_postman_id": "a74014e3-0f86-46f5-8dba-b15f8cdf0561",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/",
+        "description": "Retrieves a receipt/invoice/purchase order by document ID"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete a Receipt/Invoice/Purchase Order",
+      "_postman_id": "68c41b14-b769-11ea-b3de-0242ac130004",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/",
+        "description": "Deletes an existing receipt/invoice/purchase order"
+      },
+      "response": []
+    },
+    {
+      "name": "Update Receipt/Invoice/Purchase Orders",
+      "_postman_id": "0b198d14-b769-11ea-b3de-0242ac130004",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"category\": \"Test Category\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/",
+        "description": "Updates an existing receipt/invoice/purchase order"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Line Items",
+      "_postman_id": "8be75930-b769-11ea-b3de-0242ac130004",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0",
+            "type": "text"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/line-items/",
+        "description": "Retrieves all line items for a specific receipt/invoice/purchase order"
+      },
+      "response": []
+    },
+    {
+      "name": "Get a Line Item",
+      "_postman_id": "ed11477a-b769-11ea-b3de-0242ac130004",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0",
+            "type": "text"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/line-items/{line_item_id}/",
+        "description": "Retrieves a specific line item for a receipt/invoice/purchase order"
+      },
+      "response": []
+    },
+    {
+      "name": "Update a Line Item",
+      "_postman_id": "1e9d9872-b76d-11ea-b3de-0242ac130004",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"sku\": \"12226\",\n\t\"price\": 5.50,\n\t\"quantity\": 2.0,\n\t\"total\": 11.00\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/line-items/{line_item_id}/",
+        "description": "Updates an existing line item on an existing receipt/invoice/purchase order"
+      },
+      "response": []
+    },
+    {
+      "name": "Add a Line Item",
+      "_postman_id": "72f71312-b76d-11ea-b3de-0242ac130004",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"description\": \"Drill bit set\", \n\t\"order\": 3,\n\t\"price\": 12.50,\n\t\"quantity\": 1.0,\n\t\"total\": 12.50\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/line-items/",
+        "description": "Adds a new line item on an existing receipt/invoice/purchase order"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete a Line Item",
+      "_postman_id": "3c337d42-578f-47f5-ae9d-a8eee31a16fa",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/line-items/{line_item_id}/",
+        "description": "Deletes a line item from an existing receipt/invoice/purchase order"
+      },
+      "response": []
+    },
+    {
+      "name": "Add a Tag",
+      "_postman_id": "119a6371-cd51-4a97-9537-0a0aa6dd16d5",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"name\": \"tag_123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/tags/",
+        "description": "Adds a new tag on an existing receipt/invoice/purchase order"
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Tags for a Receipt/Invoice/Purchase Order",
+      "_postman_id": "b2102fed-07b8-4d00-9b66-936e31313613",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0",
+            "type": "text"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/tags/",
+        "description": "Retrieves all tags for a specific receipt/invoice/purchase order"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete a Tag from a Receipt/Invoice/Purchase Order",
+      "_postman_id": "d389eb66-0613-4ab3-8035-50b6071fa974",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v8/partner/documents/{document_id}/tags/{tag_id}/",
+        "description": "Deletes a tag from an existing receipt/invoice/purchase order"
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Tags (global)",
+      "_postman_id": "fc70299e-8ee9-4c1f-bf49-b54963b966bf",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0",
+            "type": "text"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v7/partner/tags/",
+        "description": "Retrieves all existing tags (global)"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete a Tag (global)",
+      "_postman_id": "c32fda58-dd5c-4876-9949-13d846af46b3",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://api.veryfi.com/api/v7/partner/tags/{tag_id}/",
+        "description": "Deletes a tag globally. The tag will be removed from all documents"
+      },
+      "response": []
+    },
+    {
+      "name": "Process W2 (File Binary)",
+      "_postman_id": "0fff324c-2899-489a-a413-619f4a996805",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/tmp/w2.jpg"
+            },
+            {
+              "key": "file_name",
+              "value": "w2.jpg",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/w2s/",
+        "description": "Extracts data from the W2 Form submitted as mutlipart form-data"
+      },
+      "response": []
+    },
+    {
+      "name": "Process W2 (File Base64)",
+      "_postman_id": "efd369c9-68b6-4ae2-979b-9ebdd2e59f9e",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_name\": \"w2.png\",\n\t\"file_data\": \"image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQYV2NgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII=\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/w2s/",
+        "description": "Extracts data from the W2 Form sent as Base64 encoded string"
+      },
+      "response": []
+    },
+    {
+      "name": "Process W2 (File URL)",
+      "_postman_id": "2b94fb8e-152b-44d2-8270-ab2da6b1431f",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_url\": \"https://cdn.example.com/w2.png\", \n\t\"file_name\": \"w2.png\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v8/partner/w2s/",
+        "description": "Extracts data from the W2 Form using provided https url to a file"
+      },
+      "response": []
+    },
+    {
+      "name": "Process W9 (File Binary)",
+      "_postman_id": "ed049805-b22b-49f8-9df7-cdfff7c45dff",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/tmp/w9.jpg"
+            },
+            {
+              "key": "file_name",
+              "value": "w9.jpg",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "https://api.veryfi.com/api/v7/partner/w9s/",
+        "description": "Extracts data from the W9 Form submitted as mutlipart form-data"
+      },
+      "response": []
+    },
+    {
+      "name": "Process W9 (File Base64)",
+      "_postman_id": "78b1459f-3829-46e9-bcba-eeffb718a7d6",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_name\": \"w9.png\",\n\t\"file_data\": \"image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQYV2NgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII=\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v7/partner/w9s/",
+        "description": "Extracts data from the W9 Form sent as Base64 encoded string"
+      },
+      "response": []
+    },
+    {
+      "name": "Process W9 (File URL)",
+      "_postman_id": "511e4779-22f5-49dd-8477-b706cf2a61b0",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_url\": \"https://cdn.example.com/w9.png\", \n\t\"file_name\": \"w9.png\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v7/partner/w9s/",
+        "description": "Extracts data from the W9 Form using provided https url to a file"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Business Card (File Binary)",
+      "_postman_id": "60fe58d3-b1fc-41ae-b5de-09edfd4528c8",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/tmp/business_card.jpg"
+            },
+            {
+              "key": "file_name",
+              "value": "business_card.jpg",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "https://api.veryfi.com/api/v7/partner/business-cards/",
+        "description": "Extracts data from the Business Card submitted as mutlipart form-data"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Business Card (File Base64)",
+      "_postman_id": "08a4fa34-be6b-47d7-b549-eb4581d911b9",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_name\": \"business_card.png\",\n\t\"file_data\": \"image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQYV2NgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII=\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v7/partner/business-cards/",
+        "description": "Extracts data from the Business Card sent as Base64 encoded string"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Business Card (File URL)",
+      "_postman_id": "2935ef96-f4bc-450b-bb27-b42a1705868d",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_url\": \"https://cdn.example.com/business_card.png\", \n\t\"file_name\": \"business_card.png\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v7/partner/business-cards/",
+        "description": "Extracts data from the Business Card using provided https url to a file"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Check (File Binary)",
+      "_postman_id": "010fdc76-2b11-408d-87da-0c897e198995",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/tmp/check.jpg"
+            },
+            {
+              "key": "file_name",
+              "value": "check.jpg",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "https://api.veryfi.com/api/v7/partner/checks/",
+        "description": "Extracts data from the Check submitted as mutlipart form-data"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Check (File Base64)",
+      "_postman_id": "99e16c91-2f76-47ff-8a0d-556199da30f6",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_name\": \"check.png\",\n\t\"file_data\": \"image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQYV2NgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII=\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v7/partner/checks/",
+        "description": "Extracts data from the Check sent as Base64 encoded string"
+      },
+      "response": []
+    },
+    {
+      "name": "Process Check (File URL)",
+      "_postman_id": "7cce2cd6-5190-406a-ab2b-7dfade160739",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "CLIENT-ID",
+            "type": "text",
+            "value": "vrf3oVAv4lYDN0O30BTAtu06GOjRNIjfrOb6GU0"
+          },
+          {
+            "key": "AUTHORIZATION",
+            "type": "text",
+            "value": "apikey josemejia:5a6e3bc22c578e0b738c39aa7f41e41b"
+          },
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"file_url\": \"https://cdn.example.com/check.png\", \n\t\"file_name\": \"check.png\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.veryfi.com/api/v7/partner/checks/",
+        "description": "Extracts data from the Check using provided https url to a file"
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "245e5528-b2b9-403f-a63e-f144159b7f27",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "f097b24a-8365-41cc-b7dc-46c1fc2b2781",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
