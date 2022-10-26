@@ -3,10 +3,10 @@
 ### API SDKs
 
 <div class="row" style="display: flex; flex-direction: row">
-    <div class="col" style="display: flex; flex-direction: column">
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+    <div class="col" style="display: flex; flex-direction: column; width: 50%">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-python" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-python > </a>
                     <span class="card-text"
@@ -26,9 +26,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-nodejs" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-nodejs > </a>
                     <span class="card-text"
@@ -48,9 +48,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-php" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-php > </a>
                     <span class="card-text"
@@ -70,9 +70,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-ruby" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-ruby > </a>
                     <span class="card-text"
@@ -92,9 +92,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-rust" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-rust > </a>
                     <span class="card-text"
@@ -115,10 +115,10 @@
             </div>
         </div>
     </div>
-    <div class="col" style="display: flex; flex-direction: column">
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+    <div class="col" style="display: flex; flex-direction: column; width: 50%">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-go" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-go > </a>
                     <span class="card-text"
@@ -138,9 +138,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-java" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-java > </a>
                     <span class="card-text"
@@ -160,9 +160,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-csharp" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-csharp > </a>
                     <span class="card-text"
@@ -182,9 +182,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-dart" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-dart > </a>
                     <span class="card-text"
@@ -204,9 +204,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-kotlin" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-kotlin > </a>
                     <span class="card-text"
@@ -232,10 +232,10 @@
 ### Mobile SDKs
 
 <div class="row" style="display: flex; flex-direction: row">
-    <div class="col" style="display: flex; flex-direction: column">
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+    <div class="col" style="display: flex; flex-direction: column; width: 50%">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-android" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-android > </a>
                     <span class="card-text"
@@ -255,9 +255,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-credit-cards-android-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" />
@@ -280,9 +280,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-headless-credit-cards-ios-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" />
@@ -305,9 +305,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-business-cards-android-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" />
@@ -330,9 +330,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-receipts-ios-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-receipts-ios-demo > </a>
@@ -354,9 +354,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-checks-android-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-checks-android-demo >
@@ -379,9 +379,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-credit-cards-ios-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-credit-cards-ios-demo >
@@ -404,9 +404,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px; display: inline-block">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-cordova-demo" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-cordova-demo > </a>
                     <span class="card-text"
@@ -426,9 +426,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px; display: inline-block">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-swiftui-ios-demo" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-swiftui-ios-demo > </a>
                     <span class="card-text"
@@ -450,10 +450,10 @@
             </div>
         </div>
     </div>
-    <div class="col" style="display: flex; flex-direction: column">
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+    <div class="col" style="display: flex; flex-direction: column; width: 50%">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-swift" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-swift > </a>
                     <span class="card-text"
@@ -473,9 +473,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title"
                         href="https://github.com/veryfi/veryfi-lens-headless-credit-cards-android-demo" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" />
@@ -498,9 +498,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-receipts-android-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-receipts-android-demo >
@@ -523,9 +523,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-checks-ios-demo" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-checks-ios-demo > </a>
                     <span class="card-text"
@@ -545,9 +545,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-react-native-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-react-native-demo > </a>
@@ -569,9 +569,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px; display: inline-block">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-xamarin-demo" target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-xamarin-demo > </a>
                     <span class="card-text"
@@ -592,9 +592,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-business-cards-ios-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-business-cards-ios-demo
@@ -617,9 +617,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-long-receipts-ios-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-long-receipts-ios-demo >
@@ -642,9 +642,9 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+        <div class="card" style="width: 95%; margin: 20px">
             <div class="card-body">
-                <div style="background-color: white; padding: 10px; font-size: 21px">
+                <div style="background-color: white; padding: 10px; font-size: 21px; min-height: 88px">
                     <a class="card-title" href="https://github.com/veryfi/veryfi-lens-ionic-capacitor-demo"
                         target="_blank">
                         <img src="./assets/git-hub-icon.png" style="width: 15px" /> veryfi-lens-ionic-capacitor-demo >
@@ -672,7 +672,7 @@
 
 ### SDKs
 
-<div class="card" style="max-width: 20rem; min-width: 20rem; margin: 20px">
+<div class="card" style="width: 95%; margin: 20px">
     <div class="card-body">
         <div style="background-color: white; padding: 10px; font-size: 21px">
             <a class="card-title" href="https://github.com/veryfi/veryfi-lens-flutter-demo"
@@ -705,11 +705,11 @@ Sample Postman Requests</h3>
 To help you get started with the Veryfi API, we've prepared a downloadable JSON export of the various REST requests described in this API Documentation section.
 
 Once you've downloaded the file, open the Postman app and navigate to File > Import to import it.
-<a download="veryfi-api-postman.json" href="./assets/veryfi-api-postman.json" title="veryfi-api-postman" style="display: inline-block">
+<a download="veryfi-api-postman.json" href="./assets/veryfi-api-postman.json" title="veryfi-api-postman" style="display: block">
 <img src="./assets/download-icon.png" style="width:15px; margin-right:5px">Download Postman File</a>
 
 <h3 style="display:flex; align-items: center"><img src="./assets/UiPath_Logo.png" style="width: 125px; margin-right: 5px">Example Project</h3>
 Get up and running quickly with the Veryfi API in UIPath with this example UIPath project.
-<a download="veryfi-api-postman.json" href="https://hub.veryfi.com/api/uipath-example-project/" title="veryfi-api-postman" style="display: inline-block">
+<a download="veryfi-api-postman.json" href="https://hub.veryfi.com/api/uipath-example-project/" title="veryfi-api-postman" style="display: block">
 <img src="./assets/download-icon.png" style="width:15px; margin-right:5px">Download UIPath Project
 </a>
