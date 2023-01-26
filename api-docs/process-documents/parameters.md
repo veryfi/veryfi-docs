@@ -2,7 +2,7 @@
 
 ---
 
-**file_name** ==REQUIRED== String
+**file_name** <span>REQUIRED</span> String
 
 file name (e.g starbucks.jpg)
 
