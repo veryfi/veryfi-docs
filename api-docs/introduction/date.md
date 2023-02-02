@@ -1,0 +1,4 @@
+{
+title: "DATE",
+content: [['"YYYY-MM-DD"'], ['Example: "2016-06-04"']],
+}

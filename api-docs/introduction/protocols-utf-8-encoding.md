@@ -1,0 +1,4 @@
+{
+title: "UTF-8 ENCODING",
+content: [['Every string passed to and from the API needs to be UTF-8 encoded. For maximum compatibility, normalize to Unicode Normalization Form C (NFC) before UTF-8 encoding.']],
+}

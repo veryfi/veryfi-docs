@@ -1,0 +1,4 @@
+{
+title: "authorization header",
+content: [['AUTHORIZATION: "apikey {username}:{api_key}"'], ['CLIENT-ID: "{client_id}"']],
+}

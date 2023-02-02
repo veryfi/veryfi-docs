@@ -1,0 +1,4 @@
+{
+title: "DATE WITH TIME",
+content: [['"YYYY-MM-DD HH:MM:SS"'], ['Example: "2016-06-04 22:31:20"']],
+}
