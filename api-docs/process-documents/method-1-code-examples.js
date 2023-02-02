@@ -1,4 +1,4 @@
-export const testData = [
+[
   {
     codeLanguage: "PYTHON",
     language: "python",
