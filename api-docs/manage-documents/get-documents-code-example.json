@@ -1,0 +1,26 @@
+[
+  {
+    "codeLanguage": "PYTHON",
+    "language": "python",
+    "value": "1",
+    "example": "import requests\\r\\n\\r\\nCLIENT_ID = \\\"CLIENT_ID\\\"\\r\\nENVIRONMENT_URL = \\\"ENVIRONMENT_URL\\\"\\r\\n\\r\\n username = \\\"USERNAME\\\"\\r\\n api_key = \\\"API_KEY\\\"\\r\\n\\r\\n document_id = \\\"DOCUMENT_ID\\\"\\r\\n\\r\\n url = '{0}api\\/v8\\/partner\\/documents\\/{1}\\/'.format(ENVIRONMENT_URL, document_id)\\r\\n headers = {\\r\\n    \\\"Content-Type\\\": \\\"application\\/json\\\",\\r\\n    \\\"Accept\\\": \\\"application\\/json\\\", \\r\\n    \\\"CLIENT-ID\\\": CLIENT_ID,\\r\\n    \\\"AUTHORIZATION\\\": \\\"apikey {0}:{1}\\\".format(username, api_key)\\r\\n}\\r\\n\\r\\n response = requests.get(url=url, headers=headers)\\r\\n\\r\\n print(response.json())"
+  },
+  {
+    "codeLanguage": "PHP",
+    "language": "php",
+    "value": "2",
+    "example": "<?php\\r\\n    $CLIENT_ID = \\\"CLIENT_ID\\\";\\r\\n    $ENVIRONMENT_URL = \\\"ENVIRONMENT_URL\\\";\\r\\n\\r\\n    $username = \\\"USERNAME\\\";\\r\\n    $api_key = \\\"API_KEY\\\";\\r\\n\\r\\n    $document_id = \\\"DOCUMENT_ID\\\";\\r\\n\\r\\n    $headers = array(\\r\\n        'Content-Type: application\\/json',\\r\\n        'Accept: application\\/json',\\r\\n        \\\"AUTHORIZATION: apikey $username:$api_key\\\",\\r\\n        \\\"CLIENT-ID: $CLIENT_ID\\\"\\r\\n    );\\r\\n\\r\\n    $url = \\\"{$ENVIRONMENT_URL}api\\/v8\\/partner\\/documents\\/$document_id\\/\\\";\\r\\n\\r\\n    $ch = curl_init($url);\\r\\n    curl_setopt($ch, CURLOPT_HEADER, false);\\r\\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\\r\\n    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);\\r\\n    $json_response = curl_exec($ch);\\r\\n    $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);\\r\\n    curl_close($ch);\\r\\n\\r\\n    print(\\\"json_response = \\\" . $json_response);\\r\\n?>"
+  },
+  {
+    "codeLanguage": "JAVA",
+    "language": "java",
+    "value": "3",
+    "example": "import org.json.JSONObject;\\r\\n import org.springframework.http.*;\\r\\n import org.springframework.web.bind.annotation.RequestMapping;\\r\\n import org.springframework.web.bind.annotation.RestController;\\r\\n import org.springframework.web.client.RestTemplate;\\r\\n\\r\\n public void getSingleDocument() {\\r\\n    String clientId = \\\"CLIENT_ID\\\";\\r\\n    String apiKey = \\\"apikey USERNAME:API_KEY\\\";\\r\\n    String documentId = \\\"DOCUMENT_ID\\\";\\r\\n    String URL = ENVIRONMENT_URL + \\\"api\\/v8\\/partner\\/documents\\/\\\" + documentId + \\\"\\/\\\";\\r\\n    RestTemplate restTemplate = new RestTemplate();\\r\\n\\r\\n    HttpHeaders headers = new HttpHeaders();\\r\\n    headers.setContentType(MediaType.APPLICATION_JSON);\\r\\n    headers.add(\\\"CLIENT-ID\\\", clientId);\\r\\n    headers.add(\\\"AUTHORIZATION\\\", apiKey);\\r\\n\\r\\n    HttpEntity<String> entity = new HttpEntity<>(null, headers);\\r\\n    ResponseEntity<String> response = restTemplate.exchange(URL, HttpMethod.GET, entity, String.class);\\r\\n    response.getStatusCode();\\r\\n}"
+  },
+  {
+    "codeLanguage": "CURL",
+    "language": "plaintext",
+    "value": "4",
+    "example": "curl    -H \\\"Content-Type: application\\/json\\\" \\\\\\r\\n        -H \\\"Accept: application\\/json\\\" \\\\\\r\\n        -H \\\"CLIENT-ID: CLIENT_ID\\\" \\\\\\r\\n        -H \\\"AUTHORIZATION: apikey USERNAME:API_KEY\\\" \\\\\\r\\n        -X GET ENVIRONMENT_URL\\/api\\/v8\\/partner\\/documents\\/DOCUMENT_ID\\/"
+  }
+]
