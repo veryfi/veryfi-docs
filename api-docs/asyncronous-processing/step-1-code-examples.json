@@ -1,0 +1,8 @@
+[
+  {
+    "codeLanguage": "CURL",
+    "language": "plaintext",
+    "value": "4",
+    "example": "curl --location --request POST 'https:\\/\\/{YOUR_WEBHOOK_URL}\\/' \\\\ \\n       --header 'Content-Type: application\\/json' \\\\ \\n       --header 'x-veryfi-signature: 3awRveqxsYK5nB6YjcaMoq1Tov87ksq+YZ34ab7YoEq=' \\\\ \\n       --data-raw '{\\\"id\\\": 41331192, \\\"created\\\": \\\"2021-09-19 20:37:47\\\"}'\\n"
+  }
+]

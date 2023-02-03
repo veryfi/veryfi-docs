@@ -1,0 +1,16 @@
+{
+    "date": "",
+    "description": "SNIP LEFT WISS LEFT-CUT SNIPS",
+    "discount": 4.0,
+    "id": 12345678,
+    "order": 0,
+    "price": 5.50,
+    "quantity": 2.0,
+    "reference": "",
+    "sku": "12226",
+    "tax": 0.0,
+    "tax_rate": 0.0,
+    "total": 11.00,
+    "type": "purchase",
+    "unit_of_measure": ""
+}

@@ -1,0 +1,15 @@
+{
+    "date": "",
+    "description": "Drill bit set",
+    "discount": 0.0,
+    "discount_rate": 0.0,
+    "id": 24156743,
+    "order": 3,
+    "price": 12.5,
+    "quantity": 1.0,
+    "sku": "",
+    "tax": 0.0,
+    "total": 12.5,
+    "type": "purchase",
+    "unit_of_measure": ""
+}

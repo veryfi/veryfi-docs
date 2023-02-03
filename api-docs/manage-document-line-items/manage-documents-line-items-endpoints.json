@@ -1,0 +1,32 @@
+[
+  {
+    "method": "GET",
+    "endpoint": "/documents/{document_id}/line-items",
+    "color": "#22CF6D"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/documents/{document_id}/line-items/",
+    "color": "#8B99EE"
+  },
+  {
+    "method": "DELETE",
+    "endpoint": "/documents/{document_id}/line-items/",
+    "color": "#FF718A"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/documents/{document_id}/line-items/{line_item_id}",
+    "color": "#22CF6D"
+  },
+  {
+    "method": "PUT",
+    "endpoint": "/documents/{document_id}/line-items/{line_item_id}",
+    "color": "#FFCD82"
+  },
+  {
+    "method": "DELETE",
+    "endpoint": "/documents/{document_id}/line-items/{line_item_id}",
+    "color": "#FF718A"
+  }
+]
