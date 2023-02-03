@@ -1,0 +1,26 @@
+[
+  {
+    "codeLanguage": "PYTHON",
+    "language": "python",
+    "value": "1",
+    "example": "import requests\n\nCLIENT_ID = \"CLIENT_ID\"\nENVIRONMENT_URL = \"ENVIRONMENT_URL\"\n\nusername = \"USERNAME\"\napi_key = \"API_KEY\"\n\ntag_id = \"TAG_ID\"\n\nurl = '{0}api\/v8\/partner\/tags\/{1}\/'.format(ENVIRONMENT_URL, tag_id)\nheaders = {\n    \"Content-Type\": \"application\/json\",\n    \"Accept\": \"application\/json\", \n    \"CLIENT-ID\": CLIENT_ID,\n    \"AUTHORIZATION\": \"apikey {0}:{1}\".format(username, api_key)\n}\n\nresponse = requests.delete(url=url, headers=headers)\n\nprint response.status_code"
+  },
+  {
+    "codeLanguage": "PHP",
+    "language": "php",
+    "value": "2",
+    "example": "<?php\n    $CLIENT_ID = \"CLIENT_ID\";\n    $ENVIRONMENT_URL = \"ENVIRONMENT_URL\";\n\n    $username = \"USERNAME\";\n    $api_key = \"API_KEY\";\n\n    $tag_id = \"TAG_ID\";\n\n    $headers = array(\n        'Content-Type: application\/json',\n        'Accept: application\/json',\n        \"AUTHORIZATION: apikey $username:$api_key\",\n        \"CLIENT-ID: $CLIENT_ID\"\n    );\n\n    $url = \"{$ENVIRONMENT_URL}api\/v8\/partner\/tags\/$tag_id\/\";\n\n    $ch = curl_init($url);\n    curl_setopt($ch, CURLOPT_HEADER, false);\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\n    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);\n    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, \"DELETE\");\n    $json_response = curl_exec($ch);\n    $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);\n    curl_close($ch);\n\n    print($status);\n?>"
+  },
+  {
+    "codeLanguage": "JAVA",
+    "language": "java",
+    "value": "3",
+    "example": "import org.json.JSONObject;\nimport org.springframework.http.*;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RestController;\nimport org.springframework.web.client.RestTemplate;\n\npublic void deleteSingleLineItem() {\n    String clientId = \"CLIENT_ID\";\n    String apiKey = \"apikey USERNAME:API_KEY\";\n    String tagId = \"TAG_ID\";\n    String URL = ENVIRONMENT_URL + \"api\/v8\/partner\/tags\/\" + tagId + \"\/\";\n    RestTemplate restTemplate = new RestTemplate();\n\n    HttpHeaders headers = new HttpHeaders();\n    headers.setContentType(MediaType.APPLICATION_JSON);\n    headers.add(\"CLIENT-ID\", clientId);\n    headers.add(\"AUTHORIZATION\", apiKey);\n\n    HttpEntity<String> entity = new HttpEntity<>(null, headers);\n    ResponseEntity<String> response = restTemplate.exchange(URL, HttpMethod.DELETE, entity, String.class);\n    response.getStatusCode();\n}"
+  },
+  {
+    "codeLanguage": "CURL",
+    "language": "plaintext",
+    "value": "4",
+    "example": "curl    -H \"Content-Type: application\/json\" \\\n        -H \"Accept: application\/json\" \\\n        -H \"CLIENT-ID: CLIENT_ID\" \\\n        -H \"AUTHORIZATION: apikey USERNAME:API_KEY\" \\\n        -X DELETE ENVIRONMENT_URL\/api\/v8\/partner\/tags\/TAG_ID\/"
+  }
+]

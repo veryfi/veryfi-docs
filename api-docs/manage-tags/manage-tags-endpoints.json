@@ -1,0 +1,27 @@
+[
+  {
+    "method": "GET",
+    "endpoint": "/tags",
+    "color": "#22CF6D"
+  },
+  {
+    "method": "DELETE",
+    "endpoint": "/tags/{tag_id}",
+    "color": "#FF718A"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/documents/{document_id}/tags",
+    "color": "#22CF6D"
+  },
+  {
+    "method": "PUT",
+    "endpoint": "/documents/{document_id}/tags/",
+    "color": "#FFCD82"
+  },
+  {
+    "method": "DELETE",
+    "endpoint": "/documents/{document_id}/tags/{tag_id}",
+    "color": "#FF718A"
+  }
+]
