@@ -1,0 +1,27 @@
+[
+  {
+    "method": "GET",
+    "endpoint": "/documents/",
+    "color": "#22CF6D"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/documents/",
+    "color": "#8B99EE"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/documents/",
+    "color": "#22CF6D"
+  },
+  {
+    "method": "PUT",
+    "endpoint": "/documents/",
+    "color": "#FFCD82"
+  },
+  {
+    "method": "DELETE",
+    "endpoint": "/documents/",
+    "color": "#FF718A"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "title": "NOTE",
+  "content": [
+    ["Make sure your webhook responds with a 200 HTTP Status Code in a timely manner, under 10 seconds."],
+    ["It will need to be able to process requests similar to the one in  Receiving and validating the webhook request"]
+  ]
+}
+
+
+

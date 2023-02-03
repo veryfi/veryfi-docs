@@ -1,0 +1,25 @@
+{
+      "id":26566742,
+      "img_url":"https://scdn.veryfi.com/receipts/c45f9514-0c48-4f49-9005-f5ddd9da555.jpg",
+      "img_thumbnail_url":"https://scdn.veryfi.com/receipts/c45f9514-0c48-f5ddd9da555_t.jpg",
+      "card_number":"4037",
+      "category":"Meals & Entertainment",
+      "currency_code":"USD",
+      "date":"2018-06-21 12:32:00",
+      "payment":{
+         "card_number":"",
+         "display_name":"No Payment,",
+         "type":"no_payment,"
+      },
+      "subtotal":25.34,
+      "tax":5.00,
+      "tip":0.0,
+      "total":30.34,
+      "vendor":{
+         "address":"132 Palm Ave, Burbank, CA 91502, USA",
+         "name":"Panera Bread",
+         "logo":"https://cdn.veryfi.com/logos/us/910164080.png",
+         "phone_number":"8183911059",
+         "type":"cafe"
+      }
+}
