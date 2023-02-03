@@ -1,0 +1,32 @@
+[
+  {
+    "codeLanguage": "PYTHON",
+    "language": "python",
+    "value": "1",
+    "example": "import requests\n\nCLIENT_ID = \"CLIENT_ID\"\nENVIRONMENT_URL = \"ENVIRONMENT_URL\"\n\nusername = \"USERNAME\"\napi_key = \"API_KEY\"\nprocess_image_url = '{0}api\/v8\/partner\/w2s\/'.format(ENVIRONMENT_URL)\nheaders = {\n    \"Content-Type\": \"application\/json\",\n    \"Accept\": \"application\/json\", \n    \"CLIENT-ID\": CLIENT_ID,\n    \"AUTHORIZATION\": \"apikey {0}:{1}\".format(username, api_key)\n}\n\n# url path to a file\nfile_url = 'https:\/\/example.com\/images\/my_w2.jpg'\nfile_name = 'my_w2.jpg'\n\npayload = {\n    'file_name': file_name,\n    'file_url': file_url,\n}\nresponse = requests.post(url=process_image_url, headers=headers, json=payload)\n\nprint(response.json())"
+  },
+  {
+    "codeLanguage": "PHP",
+    "language": "php",
+    "value": "2",
+    "example": "<?php\n    $CLIENT_ID = \"CLIENT_ID\";\n    $ENVIRONMENT_URL = \"ENVIRONMENT_URL\";\n\n    $username = \"USERNAME\";\n    $api_key = \"API_KEY\";\n\n    $data = array(\n        \"file_name\" => \"my_w2.jpg\", \n        \"file_url\" => \"https:\/\/example.com\/images\/my_w2.jpg\",\n    );\n\n    $headers = array(\n        \"Content-Type: application\/json\",\n        \"Accept: application\/json\",\n        \"AUTHORIZATION: apikey $username:$api_key\",\n        \"CLIENT-ID: $CLIENT_ID\"\n    );\n\n    $url = \"{$ENVIRONMENT_URL}api\/v8\/partner\/w2s\/\";\n\n    $ch = curl_init($url);\n    curl_setopt($ch, CURLOPT_HEADER, false);\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\n    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);\n    curl_setopt($ch, CURLOPT_POST, true);\n    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));\n    $json_response = curl_exec($ch);\n    $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);\n    curl_close($ch);\n\n    print(\"json_response = \" . $json_response);\n?>"
+  },
+  {
+    "codeLanguage": "JAVA",
+    "language": "java",
+    "value": "3",
+    "example": "import org.json.JSONObject;\nimport org.springframework.http.*;\nimport org.springframework.util.LinkedMultiValueMap;\nimport org.springframework.util.MultiValueMap;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RestController;\nimport org.springframework.web.client.HttpClientErrorException;\nimport org.springframework.web.client.RestTemplate;\nimport javax.imageio.ImageIO;\nimport java.awt.image.BufferedImage;\nimport java.awt.image.DataBufferByte;\nimport java.awt.image.WritableRaster;\nimport java.io.File;\nimport java.io.IOException;\n\npublic void processDocumentURL() {\n    String clientId = \"CLIENT_ID\";\n    String apiKey = \"apikey USERNAME:API_KEY\";\n    String URL = ENVIRONMENT_URL + \"api\/v8\/partner\/w2s\/\";\n    String fileURL = \"https:\/\/cdn.veryfi.com\/receipts\/71f19687-a0f5-48ef-a4d7-1458e83aa6b2_2.png\";\n    String fileName = \"invoice.png\";\n    RestTemplate restTemplate = new RestTemplate();\n    JSONObject requestBody = new JSONObject();\n    requestBody.put(\"file_name\", fileName);\n    requestBody.put(\"file_url\", fileURL);\n    HttpHeaders headers = new HttpHeaders();\n    headers.setContentType(MediaType.APPLICATION_JSON);\n    headers.add(\"CLIENT-ID\", clientId);\n    headers.add(\"AUTHORIZATION\", apiKey);\n    HttpEntity<String> entity = new HttpEntity<>(requestBody.toString(), headers);\n    ResponseEntity<String> response = restTemplate.postForEntity(URL, entity, String.class);\n}"
+  },
+  {
+    "codeLanguage": "C#",
+    "language": "csharp",
+    "value": "6",
+    "example": "using System;\nusing System.IO;\nusing System.Net;\n\nstatic class Keys\n{\n    public const string ENVIRONMENT_URL = \"ENVIRONMENT_URL\";\n    public const string USERNAME = \"USERNAME\";\n    public const string API_KEY = \"API_KEY\";\n    public const string CLIENT_ID = \"CLIENT-ID\";\n}\npublic class Program\n{\n    public static void ProcessDocumentURL(string fileURL)\n    {\n        var httpWebRequest = (HttpWebRequest)WebRequest.Create(\"https:\/\/\" + Keys.ENVIRONMENT_URL + \"\/api\/v8\/partner\/w2s\/\");\n        httpWebRequest.ContentType = \"application\/json\";\n        httpWebRequest.Method = \"POST\";\n        httpWebRequest.Headers.Add(\"Authorization\", \"apikey \" + Keys.USERNAME + \":\" + Keys.API_KEY);\n        httpWebRequest.Headers.Add(\"Client-id\", Keys.CLIENT_ID);\n        using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))\n        {\n            string json = \"{\\\"file_name\\\":\\\"my_w2.jpg\\\",\" +\n                           \"\\\"file_url\\\":\\\"\"+ fileURL +\"\\\"}\";\n            streamWriter.Write(json);\n        }\n        var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();\n        using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))\n        {\n            var jsonResponse = streamReader.ReadToEnd();\n            Console.WriteLine(String.Format(\"Response: {0}\", jsonResponse));\n        }\n    }\n    public static void Main(string[] args)\n    {\n        var fileURL = \"https:\/\/cdn.veryfi.com\/receipts\/ceb916d3-2ebe-4277-9d47-bc5f1499fcb0.png\";\n        ProcessDocumentURL(fileURL);\n    }\n  }"
+  },
+  {
+    "codeLanguage": "CURL",
+    "language": "plaintext",
+    "value": "4",
+    "example": "curl    -H \"Content-Type: application\/json\" \\\n        -H \"Accept: application\/json\" \\\n        -H \"CLIENT-ID: CLIENT_ID\" \\\n        -H \"AUTHORIZATION: apikey USERNAME:API_KEY\" \\\n        -X POST \\\n        -d '{\"file_name\": \"example.jpg\", \"file_url\": \"https:\/\/example.com\/images\/example.jpg\"}' \\\n        ENVIRONMENT_URL\/api\/v8\/partner\/w2s\/"
+  }
+]
