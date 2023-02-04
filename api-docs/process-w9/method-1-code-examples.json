@@ -1,0 +1,26 @@
+[
+  {
+    "codeLanguage": "PYTHON",
+    "language": "python",
+    "value": "1",
+    "example": "import requests\n\nCLIENT_ID = \"CLIENT_ID\"\nENVIRONMENT_URL = \"ENVIRONMENT_URL\"\n\nusername = \"USERNAME\"\napi_key = \"API_KEY\"\nprocess_file_url = '{0}api\/v8\/partner\/w9s\/'.format(ENVIRONMENT_URL)\nheaders = {\n    \"Content-Type\": \"multipart\/form-data\",\n    \"Accept\": \"application\/json\",\n    \"CLIENT-ID\": CLIENT_ID,\n    \"AUTHORIZATION\": \"apikey {0}:{1}\".format(username, api_key)\n}\n\n# file path and file name\nimage_path = '\/tmp\/my_w9.jpg'\nfile_name = 'my_w9.jpg'\npayload = {\n    'file_name': file_name,\n}\nfiles = {'file': ('file', open(image_path, 'rb'), 'image\/jpeg')}\nresponse = requests.post(url=process_file_url, headers=headers, data=payload, files=files)\n\nprint(response.json())"
+  },
+  {
+    "codeLanguage": "PHP",
+    "language": "php",
+    "value": "2",
+    "example": "<?php\n    $CLIENT_ID = \"CLIENT_ID\";\n    $ENVIRONMENT_URL = \"ENVIRONMENT_URL\";\n\n    $username = \"USERNAME\";\n    $api_key = \"API_KEY\";\n\n    $file_path = \"\/tmp\/example.jpg\";\n    $file_name = \"example.jpg\";\n    $file_mime = \"image\/jpeg\";\n\n    $mime_boundary=md5(time());\n    $eol = \"\\r\\n\";\n\n    $url = \"{$ENVIRONMENT_URL}api\/v8\/partner\/w9s\/\";\n\n    $fields = array(\n        'file_name' => $file_name,\n    );\n\n    $data = '';\n\n    # Build field data\n    foreach ($fields as $name => $content) {\n        $data .= '--' . $mime_boundary . $eol;\n        $data .= 'Content-Disposition: form-data; name=\"' . $name . '\"' . $eol . $eol;\n        $data .= $content . $eol;\n    }\n\n    # Build file data\n    $data .= '--' . $mime_boundary . $eol;\n    $data .= 'Content-Disposition: form-data; name=\"file\"; filename=\"' . $file_path . '\"' . $eol;\n    $data .= 'Content-Type: ' . $file_mime . $eol;\n    $data .= 'Content-Transfer-Encoding: base64' . $eol . $eol;\n    $data .= chunk_split(base64_encode(file_get_contents($file_path))) . $eol;\n    $data .= \"--\" . $mime_boundary . \"--\" . $eol;\n\n    $headers = array(\n        \"Accept: application\/json\",\n        \"Content-Type: multipart\/form-data; boundary=${mime_boundary}\",\n        \"Content-Length: \" . strlen($data),\n        \"AUTHORIZATION: apikey $username:$api_key\",\n        \"CLIENT-ID: $CLIENT_ID\"\n    );\n\n    $ch = curl_init($url);\n    curl_setopt($ch, CURLOPT_HEADER, false);\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\n    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, \"POST\");\n    curl_setopt($ch, CURLOPT_POST, true);\n    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);\n    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);\n\n    $json_response = curl_exec($ch);\n    $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);\n    curl_close($ch);\n\n    print(\"json_response = \" . $json_response);\n?>"
+  },
+  {
+    "codeLanguage": "JAVA",
+    "language": "java",
+    "value": "3",
+    "example": "import org.springframework.util.LinkedMultiValueMap;\nimport org.springframework.util.MultiValueMap;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RestController;\nimport org.springframework.web.client.HttpClientErrorException;\nimport org.springframework.web.client.RestTemplate;\nimport org.springframework.core.io.FileSystemResource;\nimport org.springframework.http.*;\nimport java.io.IOException;\n\npublic String processDocumentBinary() throws IOException {\n    String clientId = \"CLIENT_ID\";\n    String apiKey = \"apikey USERNAME:API_KEY\";\n    String URL = ENVIRONMENT_URL + \"api\/v8\/partner\/w9s\/\";\n    String filename = \"example.png\";\n\n    HttpHeaders headers = new HttpHeaders();\n    headers.add(\"CLIENT-ID\", clientId);\n    headers.add(\"ACCEPT\", \"application\/json\");\n    headers.add(\"AUTHORIZATION\", apiKey);\n    headers.setContentType(MediaType.MULTIPART_FORM_DATA);\n\n    MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();\n    body.add(\"file\", new FileSystemResource(filename));\n\n    HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);\n    try {\n        RestTemplate restTemplate = new RestTemplate();\n        ResponseEntity<String> response = restTemplate\n                .postForEntity(URL, requestEntity, String.class);\n        return response.getBody();\n    } catch (HttpClientErrorException e) {\n        return e.getMessage();\n    }\n}"
+  },
+  {
+    "codeLanguage": "CURL",
+    "language": "plaintext",
+    "value": "4",
+    "example": "curl -H \"Content-Type: multipart\/form-data\" \\\n     -H \"Accept: application\/json\" \\\n     -H \"CLIENT-ID: CLIENT_ID\" \\\n     -H \"AUTHORIZATION: apikey USERNAME:API_KEY\" \\\n     -X POST \\\n     -F 'file=@\/Users\/admin\/tmp\/my_w9.jpg' \\\n     -F 'file_name=my_w9.jpg' \\\n     ENVIRONMENT_URL\/api\/v8\/partner\/w9s\/"
+  }
+]

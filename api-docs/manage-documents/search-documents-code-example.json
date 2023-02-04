@@ -1,0 +1,26 @@
+[
+  {
+    "codeLanguage": "PYTHON",
+    "language": "python",
+    "value": "1",
+    "example": "import requests\n\nCLIENT_ID = \"CLIENT_ID\"\nENVIRONMENT_URL = \"ENVIRONMENT_URL\"\n\nusername = \"USERNAME\"\napi_key = \"API_KEY\"\n\nsearch = \"keyword\"\ncreated = \"2020-07-01+00:00:00\"\n\nurl = '{0}api\/v8\/partner\/documents\/?q={1}&created__gte={2}'.format(ENVIRONMENT_URL, search, created)\nheaders = {\n    \"Content-Type\": \"application\/json\",\n    \"Accept\": \"application\/json\", \n    \"CLIENT-ID\": CLIENT_ID,\n    \"AUTHORIZATION\": \"apikey {0}:{1}\".format(username, api_key)\n}\n\nresponse = requests.get(url=url, headers=headers)\n\nprint(response.json())"
+  },
+  {
+    "codeLanguage": "PHP",
+    "language": "php",
+    "value": "2",
+    "example": "<?php\n    $CLIENT_ID = \"CLIENT_ID\";\n    $ENVIRONMENT_URL = \"ENVIRONMENT_URL\";\n\n    $username = \"USERNAME\";\n    $api_key = \"API_KEY\";\n\n    $search = \"keyword\";\n    $created = \"2020-07-01+00:00:00\";\n\n    $headers = array(\n        'Content-Type: application\/json',\n        'Accept: application\/json',\n        \"AUTHORIZATION: apikey $username:$api_key\",\n        \"CLIENT-ID: $CLIENT_ID\"\n    );\n\n    $url = \"{$ENVIRONMENT_URL}api\/v8\/partner\/documents\/?q=$search&created__gte=$created\";\n\n    $ch = curl_init($url);\n    curl_setopt($ch, CURLOPT_HEADER, false);\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\n    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);\n    $json_response = curl_exec($ch);\n    $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);\n    curl_close($ch);\n\n    print(\"json_response = \" . $json_response);\n?>"
+  },
+  {
+    "codeLanguage": "JAVA",
+    "language": "java",
+    "value": "3",
+    "example": "import org.json.JSONObject;\nimport org.springframework.http.*;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RestController;\nimport org.springframework.web.client.RestTemplate;\n\npublic void getAllDocuments() {\n    String clientId = \"CLIENT_ID\";\n    String apiKey = \"apikey USERNAME:API_KEY\";\n\n    String search = \"keyword\";\n    String created = \"2020-07-01+00:00:00\";\n\n    String URL = ENVIRONMENT_URL + \"api\/v8\/partner\/documents\/?q=\" + search + \"&created__gte=\" + created;\n    RestTemplate restTemplate = new RestTemplate();\n\n    HttpHeaders headers = new HttpHeaders();\n    headers.setContentType(MediaType.APPLICATION_JSON);\n    headers.add(\"CLIENT-ID\", clientId);\n    headers.add(\"AUTHORIZATION\", apiKey);\n\n    HttpEntity<String> entity = new HttpEntity<>(null, headers);\n    ResponseEntity<String> response = restTemplate.exchange(URL, HttpMethod.GET, entity, String.class);\n    response.getStatusCode();\n}"
+  },
+  {
+    "codeLanguage": "CURL",
+    "language": "plaintext",
+    "value": "4",
+    "example": "curl    -H \"Content-Type: application\/json\" \\\n        -H \"Accept: application\/json\" \\\n        -H \"CLIENT-ID: CLIENT_ID\" \\\n        -H \"AUTHORIZATION: apikey USERNAME:API_KEY\" \\\n        -X GET ENVIRONMENT_URL\/api\/v8\/partner\/documents\/?q=keyword&created__gte=2020-07-01+00:00:00"
+  }
+]

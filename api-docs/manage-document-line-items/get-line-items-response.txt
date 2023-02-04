@@ -1,0 +1,38 @@
+{
+    "line_items": [
+        {
+            "date": "",
+            "description": "SNIP LEFT WISS LEFT-CUT SNIPS",
+            "discount": 4.0,
+            "id": 12345678,
+            "order": 0,
+            "price": 9.97,
+            "quantity": 1.0,
+            "reference": "",
+            "sku": "037103136480",
+            "tax": 0.0,
+            "tax_rate": 0.0,
+            "total": 9.97,
+            "type": "purchase",
+            "unit_of_measure": ""
+        },
+        {
+            "date": "",
+            "description": "MILW5PCKBLDG MKE 5PK GENERAL PURPOSE BLADES",
+            "discount": 0.0,
+            "id": 12345679,
+            "order": 1,
+            "price": 1.18,
+            "quantity": 1.0,
+            "reference": "",
+            "sku": "045242268061",
+            "tax": 0.0,
+            "tax_rate": 0.0,
+            "total": 1.18,
+            "type": "purchase",
+            "unit_of_measure": ""
+        },
+
+        ...
+    ]
+}

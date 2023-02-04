@@ -1,0 +1,22 @@
+{
+    "name": "Veryfi, Inc.",
+    "business_name": "",
+    "account_numbers": "",
+    "address1": "28 E 3rd Ave, Suite 201",
+    "address2": "San Mateo, California, 94401",
+    "c_corp": 1,
+    "s_corp": 0,
+    "trust_estate": 0,
+    "individual": 0,
+    "llc": 0,
+    "partnership": 0,
+    "other": 0,
+    "ein": "123456789",
+    "ssn": "123123456",
+    "exempt_payee_code": "",
+    "exemption": "",
+    "other_description": "",
+    "requester": "AcMe Corporation 1010 Elm Str,\nMountain View, CA 94043",
+    "signature_date": "June 19, 2020",
+    "signed": 1
+}
