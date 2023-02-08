@@ -1,12 +1,12 @@
 {
   "title": "NOTE",
   "content": [
-    ["Accepted file types are: JPEG/JPG, PNG and PDF and many more. Learn more"],
-    ["To process multiple files as a single document, submit a ZIP containing all the related files. Learn more"],
-    ["To process a PDF with multiple documents inside separately, check out PDF Splitter API. Learn more"],
-    ["When submitting PDF documents containing more than 15 pages, only the first 15 pages will be read.Learn more"],
-    ["For PDF documents, 300 DPI is optimal.Learn more"],
-    ["Optimal image resolution is dependent on the size of print in the image. Generally, 1000px on the smaller dimension is recommended for images. Learn more"],
-    ["Avoid blur in images. Accuracy of extraction is largely dependent on the quality and clarity of the image. Learn more"]
+    ["- Accepted file types are: JPEG/JPG, PNG and PDF and many more. Learn more"],
+    ["- To process multiple files as a single document, submit a ZIP containing all the related files. Learn more"],
+    ["- To process a PDF with multiple documents inside separately, check out PDF Splitter API. Learn more"],
+    ["- When submitting PDF documents containing more than 15 pages, only the first 15 pages will be read.Learn more"],
+    ["- For PDF documents, 300 DPI is optimal.Learn more"],
+    ["- Optimal image resolution is dependent on the size of print in the image. Generally, 1000px on the smaller dimension is recommended for images. Learn more"],
+    ["- Avoid blur in images. Accuracy of extraction is largely dependent on the quality and clarity of the image. Learn more"]
   ]
 }
