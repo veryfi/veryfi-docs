@@ -1,3 +1,3 @@
-### Typography/H3
+### Manage Tags
 
 "TEXT WILL BE ADDED SOON"
