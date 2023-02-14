@@ -1,6 +1,6 @@
-### Process W2s
+### Process W9s
 
-<span style="color: #8B99EE;font-size: 20px">POST</span><span style="color: #7D819E;font-size: 20px"> /w2s</span>
+<span style="color: #8B99EE;font-size: 20px">POST</span><span style="color: #7D819E;font-size: 20px"> /w9s</span>
 
 ##### There are multiple ways to process a document
 
