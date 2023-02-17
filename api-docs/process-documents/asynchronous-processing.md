@@ -1,1 +1,1 @@
-<span style="color: #22CF6D; font-size: 16px;">Asynchronous processing</span> requests receive an immediate response, however the data extraction runs in a background process. Once data extraction completes, Veryfi makes a request to your configured webhook URL.
+<p className="p-text"><span style="color: #22CF6D; font-size: 16px;">Asynchronous processing</span> requests receive an immediate response, however the data extraction runs in a background process. Once data extraction completes, Veryfi makes a request to your configured webhook URL.</p>
