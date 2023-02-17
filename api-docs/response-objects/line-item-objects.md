@@ -1,13 +1,13 @@
-### The Line Item Object
+<h3 className="h3-title">The Line Item Object</h3>
 
-#####  Attributes
+<h5 className="h5-title">Attributes</h5>
 
 ---
 <span className="parameter-text">id</span> <span className="parameter-info">Integer</span>
 
-"TEXT WILL BE ADDED SOON"
+<p className="p-text">"TEXT WILL BE ADDED SOON"</p>
 
 ---
 <span className="parameter-text">img_url</span> <span className="parameter-info">String</span>
 
-"TEXT WILL BE ADDED SOON"
+<p className="p-text">"TEXT WILL BE ADDED SOON"</p>
