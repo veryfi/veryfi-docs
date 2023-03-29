@@ -1,7 +1,5 @@
 <h3 className="h3-title">Client Header</h3>
 
-<span style="color: #22CF6D;font-size: 20px">GET</span><span style="color: #7D819E;font-size: 20px"> /documents/</span>
-
 <p className="p-text">Client Header identifies the partner (ie. you) that is making the requests to Veryfi API</p>
 
 <h5 className="h5-title">Required Keys</h5>
