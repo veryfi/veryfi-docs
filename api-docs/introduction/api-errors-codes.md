@@ -1,4 +1,4 @@
-<h5 className="h5-title">API Error Codes</h5>
+<h5 className="h5-title bold-text" style="margin-top: 48px;">API Error Codes</h5>
 
 ---
 <p className="p-text"><span className="bold-text">400</span> - Bad input parameter. The error message should indicate which one and why.</p>
