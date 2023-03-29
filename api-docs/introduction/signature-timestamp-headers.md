@@ -22,7 +22,7 @@ section in <a href='/api/settings/keys/' style="color: #22CF6D;">Settings</a>
 </p>
 
 
-<p className="p-text">Signatures are valid for 30 minutes from the time of generation.</p>
+<p className="p-text" style="margin-top: 48px;">Signatures are valid for 30 minutes from the time of generation.</p>
 
 <p className="p-text"><span style="font-weight: 700">X-Veryfi-Request-Timestamp</span> value is 
 an Unit Timestamp in ms since epoch. 
