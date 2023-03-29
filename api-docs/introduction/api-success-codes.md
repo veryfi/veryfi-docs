@@ -1,4 +1,4 @@
-<h5 className="h5-title">API Success Codes</h5>
+<h5 className="h5-title bold-text">API Success Codes</h5>
 
 ---
 <p className="p-text"><span className="bold-text">200</span> - Default OK</p>
