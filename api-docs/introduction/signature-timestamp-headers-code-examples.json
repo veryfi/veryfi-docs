@@ -1,0 +1,26 @@
+[
+  {
+    "codeLanguage": "PYTHON",
+    "language": "python",
+    "value": "1",
+    "example": "import time\nimport hashlib\nimport hmac\nimport base64\n\nCLIENT_SECRET = \"CLIENT_SECRET\"\nuser_id = \"USER_ID\"\n\n# Build signature\ntimestamp = int(time.time() * 1000)\npayload_to_sign = \"timestamp:{0},user_id:{1}\".format(timestamp, user_id)\ntmp_signature = hmac.new(CLIENT_SECRET, msg=payload, digestmod=hashlib.sha256).digest()\nsecret_bytes = bytes(CLIENT_SECRET, 'utf-8')\npayload_to_sign_bytes = bytes(payload_to_sign, 'utf-8')\ntmp_signature = hmac.new(secret_bytes, msg=payload_to_sign_bytes, digestmod=hashlib.sha256).digest()\nsignature = str(base64.b64encode(tmp_signature)).strip()\n\nprint signature"
+},
+  {
+    "codeLanguage": "PHP",
+    "language": "php",
+    "value": "2",
+    "example": "<?php\n    $CLIENT_SECRET = \"CLIENT_SECRET\";\n    $user_id = \"USER_ID\";\n\n    \/\/ Build signature\n    $timestamp = time() * 1000;\n    $payload_to_sign = \"timestamp:$timestamp,user_id:$user_id\";\n    $tmp_signature = hash_hmac('sha256', $payload_to_sign, $CLIENT_SECRET, true);\n    $signature = base64_encode($tmp_signature);\n\n    print($signature);\n?>"
+  },
+  {
+    "codeLanguage": "JAVA",
+    "language": "java",
+    "value": "3",
+    "example": "import javax.crypto.Mac;\nimport javax.crypto.spec.SecretKeySpec;\nimport java.nio.charset.StandardCharsets;\nimport java.security.InvalidKeyException;\nimport java.security.NoSuchAlgorithmException;\nimport java.util.Base64;\nimport java.util.Date;\n​\npublic String getSignature() {\n    String clientSecret = \"CLIENT_SECRET\";\n    String userId = \"USER_ID\";\n    ​\n    \/\/ Build signature\n    Date date = new Date();\n    long timeStamp = date.getTime();\n    String message = \"timestamp:\" + timeStamp + \",user_id:\" + userId;\n    SecretKeySpec keySpec = new SecretKeySpec(clientSecret.getBytes(StandardCharsets.UTF_8), \"HmacSHA256\");\n    Mac mac;\n    try {\n        mac = Mac.getInstance(\"HmacSHA256\");\n    } catch (NoSuchAlgorithmException e) {\n        return e.getMessage();\n    }\n    try {\n        mac.init(keySpec);\n    } catch (InvalidKeyException e) {\n        return  e.getMessage();\n    }\n    byte[] rawHmac = mac.doFinal(message.getBytes(StandardCharsets.UTF_8));\n    String base64SignatureEncoded = Base64.getEncoder().encodeToString(rawHmac);\n\n    return base64SignatureEncoded;\n}"
+  },
+  {
+    "codeLanguage": "BASH",
+    "language": "plaintext",
+    "value": "4",
+    "example": "CLIENT_SECRET=\"CLIENT_SECRET\"\nuser_id=\"USER_ID\"\n\n# Sign the request\ntimestamp=$(( $(date +%s) * 1000 ))\npayload_to_sign=\"timestamp:${timestamp},user_id:${user_id}\"\nbase64_signature=$(echo -n ${payload_to_sign} | openssl sha256 -hmac ${CLIENT_SECRET} -binary | base64)"
+  }
+]
