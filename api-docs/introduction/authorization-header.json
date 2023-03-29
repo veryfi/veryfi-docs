@@ -1,0 +1,4 @@
+{
+"title": "Authorization header",
+"content": [["AUTHORIZATION: \"apikey USERNAME:API_KEY\""]]
+}
