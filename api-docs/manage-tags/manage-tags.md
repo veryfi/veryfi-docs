@@ -1,3 +1,3 @@
-### Manage Tags
+<h3 className="h3-title">Manage Tags</h3>
 
-"TEXT WILL BE ADDED SOON"
+<p className="p-text">"TEXT WILL BE ADDED SOON"</p>

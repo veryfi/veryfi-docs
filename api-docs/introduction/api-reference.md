@@ -1,3 +1,1 @@
-### API Reference
-
-“TEXT WILL BE ADDED SOON”
+<h3 className="h3-title">API Reference</h3>

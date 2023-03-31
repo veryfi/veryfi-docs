@@ -1,3 +1,3 @@
-### Reponse Objects
+<h3 className="h3-title">Reponse Objects</h3>
 
-"TEXT WILL BE ADDED SOON"
+<p className="p-text">"TEXT WILL BE ADDED SOON"</p>

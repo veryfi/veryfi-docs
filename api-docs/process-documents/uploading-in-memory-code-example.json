@@ -1,0 +1,8 @@
+[
+  {
+    "codeLanguage": "PYTHON",
+    "language": "python",
+    "value": "1",
+    "example": "import io\nimport zipfile\nimport base64\nimport requests\nimport json\n\nlist_files = ['receipt1.jpg', 'receipt2.jpg']\n\nzip_buffer = io.BytesIO()\nwith zipfile.ZipFile(zip_buffer, \"a\", zipfile.ZIP_DEFLATED, False) as zip_file:\n    for file_name in list_files:\n        with open(file_name, \"rb\") as image_file:\n            zip_file.writestr(file_name, image_file.read())\n\nencode_zip_string = base64.b64encode(zip_buffer.getvalue())\n\nclient_id = 'your_client_id'\nclient_secret = 'your_client_secret'\nusername = 'your_username'\napi_key = 'your_password'\n\nheaders = {\n    \"User-Agent\": \"Python Veryfi-Python\/3.0.0\",\n    \"Accept\": \"application\/json\",\n    \"Content-Type\": \"application\/json\",\n    \"Client-Id\": client_id,\n    \"Authorization\": f\"apikey {username}:{api_key}\"\n}\napi_url = \"api.veryfi.com\/api\/v8\/partner\/documents\"\nrequest_arguments = {\n    \"file_name\": file_name,\n    \"file_data\": encode_zip_string,\n}\n_session = requests.Session()\nresponse = _session.request(\n            \"POST\",\n            url=api_url,\n            headers=headers,\n            data=json.dumps(request_arguments),\n        )"
+  }
+]

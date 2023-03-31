@@ -1,5 +1,4 @@
-### API Response Codes
+<h3 className="h3-title">API Response Codes</h3>
 
-<span style="color: #22CF6D;font-size: 20px">GET</span><span style="color: #7D819E;font-size: 20px"> /documents/</span>
-
-Submit a request to process a Base64 encoded document.
+<p className="p-text">Errors are returned using standard HTTP error code syntax. Any additional info is 
+included in the JSON-formatted body of the return call.</p>

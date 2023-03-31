@@ -1,16 +1,16 @@
-##### API Success Codes
+<h5 className="h5-title bold-text">API Success Codes</h5>
 
 ---
-**200** - Default OK
+<p className="p-text"><span className="bold-text">200</span> - Default OK</p>
 
 ---
-**201** - Object Created OK
+<p className="p-text"><span className="bold-text">201</span> - Object Created OK</p>
 
 ---
-**202** - Accepted
+<p className="p-text"><span className="bold-text">202</span> - Accepted</p>
 
 ---
-**204** - Empty Response
+<p className="p-text"><span className="bold-text">204</span> - Empty Response</p>
 
 ---
-**205-299** - Success codes that are Currently not used in Veryfi APIs
+<p className="p-text"><span className="bold-text">205-299</span> - Success codes that are Currently not used in Veryfi APIs</p>

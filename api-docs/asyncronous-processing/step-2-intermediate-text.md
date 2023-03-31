@@ -1,1 +1,1 @@
-The response will contain the document ID assigned to the document that is being processed. No additional information is available at this point as the document has not yet been processed.
+<p className="p-text">The response will contain the document ID assigned to the document that is being processed. No additional information is available at this point as the document has not yet been processed.</p>
