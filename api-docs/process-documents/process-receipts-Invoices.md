@@ -1,8 +1,11 @@
-<h3 className="h3-title">Process Receipts & Invoices</h3>
+<h3 className="h3-title">Document Processing</h3>
 
-<span style="color: #8B99EE;font-size: 20px">POST</span><span style="color: #7D819E;font-size: 20px"> /documents/</span>
+<p className="p-text bold-text">POST requests are used to submit document for processing. However, 
+there are a few important request configurations to be considered depending 
+on the content and response type.</p>
 
-<p className="p-text bold-text">There are multiple ways to process a document</p>
+
+<h5 className="h5-title">Processing document depending on the content type:</h5>
 
 ---
 <span style="color: #22CF6D; font-size: 16px;">Multipart/form-data upload</span>
@@ -18,3 +21,17 @@
 <span style="color: #22CF6D; font-size: 16px;">Specify a file URL</span>
 
 <p className="p-text">Submit a request to process a file using a URL.</p>
+
+
+<h5 className="h5-title" style="margin-top: 80px;">Retrieving extracted data depending on the response types:</h5>
+
+---
+<span style="color: #22CF6D; font-size: 16px;">Syncronous response</span>
+<p className="p-text">By default all  processing requests are synchronous. The data is extracted in real-time and the 
+results are included in the response to the processing API request.</p>
+
+---
+<span style="color: #22CF6D; font-size: 16px;">Asynchronous response</span>
+<p className="p-text">Asynchronous processing requests receive an immediate response, however, 
+the data extraction runs in a background process. Once data extraction completes, Veryfi makes 
+a request to your configured webhook URL.</p>

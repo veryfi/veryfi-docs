@@ -1,0 +1,8 @@
+[
+  {
+    "codeLanguage": "PYTHON",
+    "language": "python",
+    "value": "1",
+    "example": "import zipfile\nfrom veryfi import Client\n\nlist_files = ['receipt1.jpg', 'receipt2.jpg']\nzip_file_path = 'receipts.zip'\n\nwith zipfile.ZipFile(zip_file_path, 'w') as zipF:\n    for file in list_files:\n        zipF.write(file, compress_type=zipfile.ZIP_DEFLATED)\n\nclient_id = 'your_client_id'\nclient_secret = 'your_client_secret'\nusername = 'your_username'\napi_key = 'your_password'\n\nveryfi_client = Client(client_id, client_secret, username, api_key)\nresponse = veryfi_client.process_document(zip_file_path)"
+  }
+]
