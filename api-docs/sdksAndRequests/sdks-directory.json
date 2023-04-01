@@ -1,0 +1,62 @@
+[
+  {
+    "leftSideUrl": "sdksAndRequests/python-sdk.md",
+    "rightSideUrl": "sdksAndRequests/python-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-python"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/java-sdk.md",
+    "rightSideUrl": "sdksAndRequests/java-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-java"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/node-sdk.md",
+    "rightSideUrl": "sdksAndRequests/node-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-nodejs"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/php-sdk.md",
+    "rightSideUrl": "sdksAndRequests/php-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-php"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/go-sdk.md",
+    "rightSideUrl": "sdksAndRequests/go-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-go"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/dart-sdk.md",
+    "rightSideUrl": "sdksAndRequests/dart-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-dart"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/csharp-sdk.md",
+    "rightSideUrl": "sdksAndRequests/csharp-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-csharp"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/ruby-sdk.md",
+    "rightSideUrl": "sdksAndRequests/ruby-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-ruby"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/rust-sdk.md",
+    "rightSideUrl": "sdksAndRequests/rust-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-rust"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/kotlin-sdk.md",
+    "rightSideUrl": "sdksAndRequests/kotlin-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-kotlin"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/swift-sdk.md",
+    "rightSideUrl": "sdksAndRequests/swift-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-swift"
+  },
+  {
+    "leftSideUrl": "sdksAndRequests/android-sdk.md",
+    "rightSideUrl": "sdksAndRequests/android-sdk-right-side.md",
+    "githubRepoUrl": "https://github.com/veryfi/veryfi-android"
+  }
+]
