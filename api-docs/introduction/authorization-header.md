@@ -1,4 +1,4 @@
-<h3 className="h3-title">Authorization Header</h3>
+<h3 id="new-api-docs-authorization-header" className="h3-title">Authorization Header</h3>
 
 <p className="p-text">Authorization Header provides credentials that authenticate a user agent with a server, allowing access to protected resources.</p>
 

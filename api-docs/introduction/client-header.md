@@ -1,4 +1,4 @@
-<h3 className="h3-title">Client Header</h3>
+<h3 id="new-api-docs-client-header" className="h3-title">Client Header</h3>
 
 <p className="p-text">Client Header identifies the partner (ie. you) that is making the requests to Veryfi API</p>
 
