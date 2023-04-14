@@ -8,17 +8,17 @@ on the content and response type.</p>
 <h5 className="h5-title">Processing document depending on the content type:</h5>
 
 ---
-<span style="color: #22CF6D; font-size: 16px;">Multipart/form-data upload</span>
+<a className="p-text-green-link" href="#form-data-upload-new-api-docs" style="color: #22CF6D; font-size: 16px;">Method 1: Multipart/form-data upload</a>
 
 <p className="p-text">Submit a request to process a multipart/form-data file upload.</p>
 
 ---
-<span style="color: #22CF6D; font-size: 16px;">Base64 encoded file upload</span>
+<a className="p-text-green-link" href="#base-64-new-api-docs" style="color: #22CF6D; font-size: 16px;">Method 2: Base64 encoded file upload</a>
 
 <p className="p-text">Submit a request to process a Base64 encoded document.</p>
 
 ---
-<span style="color: #22CF6D; font-size: 16px;">Specify a file URL</span>
+<a className="p-text-green-link" href="#using-a-url-new-api-docs" style="color: #22CF6D; font-size: 16px;">Method 3: Specify a file URL</a>
 
 <p className="p-text">Submit a request to process a file using a URL.</p>
 
@@ -26,12 +26,12 @@ on the content and response type.</p>
 <h5 className="h5-title" style="margin-top: 80px;">Retrieving extracted data depending on the response types:</h5>
 
 ---
-<span style="color: #22CF6D; font-size: 16px;">Syncronous response</span>
+<a className="p-text-green-link" href="/api-docs-process-asynchronous/#synchronous-response-new-api-docs" style="color: #22CF6D; font-size: 16px;">Synchronous response</a>
 <p className="p-text">By default all  processing requests are synchronous. The data is extracted in real-time and the 
 results are included in the response to the processing API request.</p>
 
 ---
-<span style="color: #22CF6D; font-size: 16px;">Asynchronous response</span>
+<a className="p-text-green-link" href="/api-docs-process-asynchronous/#asynchronous-new-api-docs" style="color: #22CF6D; font-size: 16px;">Asynchronous response</a>
 <p className="p-text">Asynchronous processing requests receive an immediate response, however, 
 the data extraction runs in a background process. Once data extraction completes, Veryfi makes 
 a request to your configured webhook URL.</p>

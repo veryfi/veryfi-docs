@@ -1,4 +1,4 @@
-<h3 className="h3-title">Process file using multipart/form-data upload</h3>
+<h3 className="h3-title" id="form-data-upload-new-api-docs">Method 1: Process file using multipart/form-data upload</h3>
 
 
 
