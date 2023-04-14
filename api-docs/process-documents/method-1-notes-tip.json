@@ -4,7 +4,8 @@
     {
       "linkText": "Uploading a zip file",
       "link": "#uploading-zip-file-new-api-docs",
-      "endText": "as a multipart/form-data is the fastest way to upload files"
+      "endText": "as a multipart/form-data is the fastest way to upload files",
+      "startText": ""
     }
   ]
 }
