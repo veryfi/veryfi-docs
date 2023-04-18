@@ -1,2 +1,2 @@
-<h3 className="h3-title">Uploading Zip files</h3>
+<h3 className="h3-title" id="uploading-zip-file-new-api-docs">Uploading Zip files</h3>
 

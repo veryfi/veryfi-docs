@@ -1,4 +1,4 @@
-<h3 className="h3-title">Signature & Timestamp Headers</h3>
+<h3 className="h3-title" id="new-api-docs-signature-timestamp">Signature & Timestamp Headers</h3>
 
 <p className="p-text">All requests to <span style="color: #22CF6D;">/partner/users/</span> endpoints should have 
 X-VERYFI-REQUEST-SIGNATURE and X-VERYFI-REQUEST-TIMESTAMP headers as an additional layer of authentication.</p>

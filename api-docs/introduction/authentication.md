@@ -1,4 +1,4 @@
-<h3 className="h3-title">Authentication</h3>
+<h3 className="h3-title" id="auth-new-api-docs">Authentication</h3>
 
 <p className="p-text">To access the Veryfi API programmatically, 
 you will need to configure a <a href='#new-api-docs-client-header' style="color: #22CF6D;">Client</a> 

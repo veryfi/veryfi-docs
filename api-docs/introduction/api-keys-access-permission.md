@@ -1,4 +1,4 @@
-<h3 className="h3-title">API Keys Access Permission</h3>
+<h3 className="h3-title" id="new-api-docs-api-keys-permission">API Keys Access Permission</h3>
 
 <p className="p-text">For security and safety reasons, there is now an additional control for Admin users to access 
 <a href='/api/settings/keys/' style="color: #22CF6D;">API Keys</a> or restrict it.</p>

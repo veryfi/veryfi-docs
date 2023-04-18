@@ -1,4 +1,4 @@
-<h3 className="h3-title">Step 5: Retrieve processed document</h3>
+<h3 className="h3-title" id="retrieve-document-new-api-docs">Step 5: Retrieve processed document</h3>
 
 <p className="p-text">Now that the webhook request has been validated as indeed coming from Veryfi, the next step is to retrieve the data extracted from the document and perform any additional required tasks.</p>
 

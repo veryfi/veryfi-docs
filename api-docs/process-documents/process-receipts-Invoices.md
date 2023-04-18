@@ -1,4 +1,4 @@
-<h3 className="h3-title">Document Processing</h3>
+<h3 className="h3-title" id="api-docs-document-processing">Document Processing</h3>
 
 <p className="p-text bold-text">POST requests are used to submit document for processing. However, 
 there are a few important request configurations to be considered depending 
