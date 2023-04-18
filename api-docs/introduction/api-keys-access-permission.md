@@ -10,4 +10,4 @@ you add external people as team members to your company account.
 Access to API Keys can be granted to Admin users only. For non-Admin access to API Keys is restricted.
 </p>
 
-<p className="p-text">Learn more in <a href='https://faq.veryfi.com/' style="color: #22CF6D;">Managing My Team Workspace</a> FAQ</p>
+<p className="p-text">Learn more in <a href='https://faq.veryfi.com/en/articles/5254324-managing-my-team-workspace' style="color: #22CF6D;">Managing My Team Workspace</a> FAQ</p>
