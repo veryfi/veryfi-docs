@@ -1,6 +1,6 @@
 <h3 className="h3-title" id="new-api-docs-signature-timestamp">Signature & Timestamp Headers</h3>
 
-<p className="p-text">All requests to <span style="color: #22CF6D;">/partner/users/</span> endpoints should have 
+<p className="p-text">All requests to <span style="color: #8B99EE;">/partner/users/</span> endpoints should have 
 X-VERYFI-REQUEST-SIGNATURE and X-VERYFI-REQUEST-TIMESTAMP headers as an additional layer of authentication.</p>
 
 <p className="p-text">When a user sends a <span style="font-weight: 700">POST</span> request, 
@@ -17,8 +17,8 @@ server side.</p>
 ---
 <span className="parameter-text">CLIENT_SECRET</span> <span style="color: #FFC56D;font-size: 14px" className="parameter-info">REQUIRED</span> <span className="parameter-info">String</span>
 
-<p className="p-text">Could be obtained from the <a href='/api/settings/keys/' style="color: #22CF6D;">Keys</a> 
-section in <a href='/api/settings/keys/' style="color: #22CF6D;">Settings</a>
+<p className="p-text">Could be obtained from the <a href='/api/settings/keys/' style="color: #8B99EE;">Keys</a> 
+section in <a href='/api/settings/keys/' style="color: #8B99EE;">Settings</a>
 </p>
 
 
@@ -26,7 +26,7 @@ section in <a href='/api/settings/keys/' style="color: #22CF6D;">Settings</a>
 
 <p className="p-text"><span style="font-weight: 700">X-Veryfi-Request-Timestamp</span> value is 
 an Unit Timestamp in ms since epoch. 
-(<a href="https://www.epochconverter.com" style="color: #22CF6D;">https://www.epochconverter.com</a>)</p>
+(<a href="https://www.epochconverter.com" style="color: #8B99EE;">https://www.epochconverter.com</a>)</p>
 
 <p className="p-text">Since <span style="font-weight: 700">CLIENT_SECRET</span> is essential to the application's own 
 password. When using a Veryfi SDK, it automatically does the signing.</p>

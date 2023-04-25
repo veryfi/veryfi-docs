@@ -1,4 +1,4 @@
 {
-  "title": "ENABLING ASYNC PROCESSING",
+  "title": "Enabling Async Processing",
   "content": [["{ \n    \"async\": true\n}"]]
 }

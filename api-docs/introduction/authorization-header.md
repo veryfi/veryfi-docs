@@ -7,14 +7,14 @@
 ---
 <span className="parameter-text">USERNAME</span> <span style="color: #FFC56D;font-size: 14px" className="parameter-info">REQUIRED</span> <span className="parameter-info">String</span>
 
-<p className="p-text">Could be obtained from the <a href='/api/settings/keys/' style="color: #22CF6D;">Keys</a> 
-section in <a href='/api/settings/keys/' style="color: #22CF6D;">Settings</a>
+<p className="p-text">Could be obtained from the <a href='/api/settings/keys/' style="color: #8B99EE;">Keys</a> 
+section in <a href='/api/settings/keys/' style="color: #8B99EE;">Settings</a>
 </p>
 
 
 ---
 <span className="parameter-text">API_KEY</span> <span style="color: #FFC56D;font-size: 14px" className="parameter-info">REQUIRED</span> <span className="parameter-info">String</span>
 
-<p className="p-text">Could be obtained from the <a href='/api/settings/keys/' style="color: #22CF6D;">Keys</a> 
-section in <a href='/api/settings/keys/' style="color: #22CF6D;">Settings</a>
+<p className="p-text">Could be obtained from the <a href='/api/settings/keys/' style="color: #8B99EE;">Keys</a> 
+section in <a href='/api/settings/keys/' style="color: #8B99EE;">Settings</a>
 </p>
