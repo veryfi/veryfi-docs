@@ -1,5 +1,5 @@
 {
-  "title": "TRY MULTIPART/FORM-DATA FILE UPLOAD",
+  "title": "Try Multipart/Form-Data File Upload",
   "content": [
     ["Receipts & Invoices", "/api-docs-v2/#/paths/api-v8-partner-documents/post"],
     ["Checks", "/api-docs-checks-v2/#/operations/processCheck"],
