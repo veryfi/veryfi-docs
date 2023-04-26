@@ -1,4 +1,4 @@
-<h3 className="h3-title">Process file using Base64 encoded file</h3>
+<h3 className="h3-title" id="base-64-new-api-docs">Method 2: Process file using Base64 encoded file</h3>
 
 
 <p className="p-text">Submit a request to process a Base64 encoded document.</p>

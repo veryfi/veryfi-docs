@@ -5,9 +5,9 @@
 
 <p className="p-text">The event value stands for the document processing status.</p>
 
-- **document.created** - <p className="p-text">document has been process and ready to be retrieved</p>
+- <p className="p-text"><span className="p-text-title">document.created</span> - document has been process and ready to be retrieved</p>
 
-- **document.failed** - <p className="p-text">document processing has failed</p>
+- <p className="p-text"><span className="p-text-title">document.failed</span> -document processing has failed</p>
 
 ---
 <span className="parameter-text">data</span> <span className="parameter-info">Object</span>

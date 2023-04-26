@@ -1,0 +1,4 @@
+{
+  "title": "Postman Request Samples",
+  "content": [["To help you get started with the Veryfi API, we've prepared a downloadable JSON export of the various REST requests described in this API Documentation section. Once you've downloaded the file, open the Postman app and navigate to File > Import to import it."]]
+}

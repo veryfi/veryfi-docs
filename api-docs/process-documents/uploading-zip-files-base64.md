@@ -1,7 +1,7 @@
 <h5 className="h5-title">Uploading a in-memory compressed data manually as a Base64 encoded file</h5>
 
-1. Compress files
-2. Create a Base64 encoded string from the data 
-3. Configure <span href='/api-docs-introduction-auth/' style="color: #22CF6D;">Client ID and Authorization headers</span>
-4. Configure <span href='/api-docs-introduction-auth/' style="color: #22CF6D;">Document Processing</span> request parameters. 
-5. Make a POST request 
+<p className="p-text-list">1. Compress files</p>
+<p className="p-text-list">2. Create a Base64 encoded string from the data</p>
+<p className="p-text-list">3. Configure <a href='/api/settings/keys/' style="color: #8B99EE;">Client ID and Authorization headers</a></p>
+<p className="p-text-list">4. Configure <a href='/api/settings/keys/' style="color: #8B99EE;">Document Processing</a> request parameters.</p> 
+<p className="p-text-list">5. Make a POST request</p>
