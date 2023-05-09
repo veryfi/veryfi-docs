@@ -1,8 +1,8 @@
 [
   {
-    "codeLanguage": "CURL",
-    "language": "plaintext",
+    "codeLanguage": "PYTHON",
+    "language": "python",
     "value": "1",
-    "example": "curl --location --request POST 'https://{YOUR_WEBHOOK_URL}/' \\ \n       --header 'Content-Type: application/json' \\ \n       --header 'x-veryfi-signature: 3awRveqxsYK5nB6YjcaMoq1Tov87ksq+YZ34ab7YoEq=' \\ \n       --data-raw '{\"id\": 41331192, \"created\": \"2021-09-19 20:37:47\"}'\n"
+    "example": "import hashlib\nimport hmac\nimport base64\nfrom typing import *\n\ndef create_signature(data_payload: Dict, client_secret: str) -> str:\n    signature = hmac.new(\n        client_secret.encode(\"utf-8\"), msg=str(data_payload).encode(\"utf-8\"), digestmod=hashlib.sha256\n    ).digest()\n    base64_signature = str(base64.b64encode(signature), \"utf-8\").strip()\n    return base64_signature\n\ngenerated_signature = create_signature(payload[\"data\"], client_secret)\n\n# Confirm that the generated signature equals the validation signature\n# from the x-veryfi-signature header\nis_valid = generated_signature == validation_signature"
   }
 ]
