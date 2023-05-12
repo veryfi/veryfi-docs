@@ -2,7 +2,7 @@
 
 <p className="p-text">While getting an instant result is a huge advantage , there are use cases for separating the collection of documents from the backend business logic that processes the data extracted from these documents. One of the use cases is a batch document processing, when multiple documents submitted at the same time. Server should be notified when all the documents are processed and structured data is ready to be consumed. In such cases asynchronous processing is even faster then getting instant results document by document.</p>
 
-<p className="p-text">This asynchronous flow is achieved with the use of <a href="#form-data-upload-new-api-docs" style="color: #8B99EE"> Webhooks </a>.</p>
+<p className="p-text">This asynchronous flow is achieved with the use of <a href="#set-webhooks-new-api-docs" style="color: #8B99EE"> Webhooks </a>.</p>
 
 <p className="p-text"> Asynchronous Processing Workflow: </p>
 

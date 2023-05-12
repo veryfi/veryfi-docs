@@ -3,7 +3,7 @@
   "content": [
     {
       "linkText": "Receipt & Invoices",
-      "link": "/api-docs-v2/#/paths/api-v8-partner-documents/post",
+      "link": "/api/docs/api-docs-v2/#/paths/api-v8-partner-documents/post",
       "endText": "document processing",
       "startText": "Sync & Async response types are only supported for"
     }
