@@ -1,10 +1,10 @@
 {
   "title": "Try Multipart/Form-Data File Upload",
   "content": [
-    ["Receipts & Invoices", "/api-docs-v2/#/paths/api-v8-partner-documents/post"],
-    ["Checks", "/api-docs-checks-v2/#/operations/processCheck"],
-    ["W2s", "/api-docs-w2-v2/#/paths/api-v8-partner-w2s/post"],
-    ["W9s", "/api-docs-w9-v2/#/paths/api-v8-partner-w9s/post"],
-    ["Business Cards", "/api-docs-business-cards-v2/#/paths/api-v7-partner-business-cards/post"]
+    ["Receipts & Invoices", "/api/docs/api-docs-v2/#/paths/api-v8-partner-documents/post"],
+    ["Checks", "/api/docs/api-docs-checks-v2/#/operations/processCheck"],
+    ["W2s", "/api/docs/api-docs-w2-v2/#/paths/api-v8-partner-w2s/get"],
+    ["W9s", "/api/docs/api-docs-w9-v2/#/paths/api-v8-partner-w9s/get"],
+    ["Business Cards", "/api/docs/api-docs-business-cards-v2/#/paths/api-v7-partner-business-cards/post"]
   ]
 }
