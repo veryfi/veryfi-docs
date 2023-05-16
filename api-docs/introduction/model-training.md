@@ -1,6 +1,6 @@
 <h3 className="h3-title" id="api-docs-document-processing">Model Training</h3>
 
-<p className="p-text bold-text">Veryfi's Machine Learning models undergo frequent training. Changes that are made to processed documents are used during these training sessions. To help improve the accuracy of data extraction for documents that you submit to Veryfi's API, all you need to do is to correct any issues at a document or line-item level through the PUT, POST and DELETE operations described below. A new and improved version of the models is typically released every 1-2 weeks.</p>
+<p className="p-text bold-text">Veryfi's Machine Learning models undergo frequent training. Changes that are made to processed documents are used during these training sessions. To help improve the accuracy of data extraction for documents that you submit to Veryfi's API, all you need to do is to correct any issues at a document or line-item level through the PUT, POST and DELETE operations described below.</p>
 
 
 <h5 className="h5-title">Use these endpoint to train data extraction model and improve results</h5>
