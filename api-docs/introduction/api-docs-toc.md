@@ -64,7 +64,7 @@
 
 <a href='/api/docs/sdks/#sdk-samples-uipath-postman' style="color: #8B99EE; margin-left: 8px">Request Samples</a>
 
-<a href='api/docs/sdks/#python-sdk-new-api-docs' style="color: #8B99EE; margin-left: 8px">Veryfi Python SDK</a>
+<a href='/api/docs/sdks/#python-sdk-new-api-docs' style="color: #8B99EE; margin-left: 8px">Veryfi Python SDK</a>
 
 <a href='/api/docs/sdks/#java-sdk-new-api-docs' style="color: #8B99EE; margin-left: 8px">Veryfi Java SDK</a>
 
