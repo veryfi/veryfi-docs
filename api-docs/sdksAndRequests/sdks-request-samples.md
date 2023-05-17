@@ -1,4 +1,4 @@
-<h3 className="h3-title">SDKs & Request Samples</h3>
+<h3 className="h3-title" id="sdk-samples-intro">SDKs & Request Samples</h3>
 
 <p className="p-text">An SDK is a set of tools (pre-written code) for 
 third-party developers (you) to use in your producing application/s using a particular 
