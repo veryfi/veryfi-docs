@@ -13,6 +13,6 @@
 ---
 <span className="parameter-text">validation_signature</span> <span style="color: #FFC56D;font-size: 14px" className="parameter-info">REQUIRED</span>
 
-<p className="p-text">List of categories, if you would like to use your own list and it’s different from the Default one [“Meals & Entertainment”, “Travel”, ...]</p>
+<p className="p-text">this is the value of the <span style="font-weight: 700">x-veryfi-signature</span> header in the request</p>
 
 ---
