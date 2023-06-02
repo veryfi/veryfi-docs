@@ -1,8 +1,6 @@
 <h3 className="h3-title" id="api-docs-sync-async">Synchronous vs Asynchronous Processing</h3> 
 
-<p className="p-text">The synchronous/asynchronous document processing is controlled by the “async” request parameter. 
-By default the “async” parameter is false, so all the documents processed synchronously 
-providing an instantly extracted data in a response. </p>
+<p className="p-text">The synchronous/asynchronous document processing is controlled by the “async” request parameter. By default the “async” parameter is false, so all the documents processed synchronously return the extracted data in the response.</p>
 
 <h5 className="h5-title">Parameters</h5>
 
