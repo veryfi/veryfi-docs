@@ -8,10 +8,10 @@
 ---
 <span className="parameter-text">file_name</span> <span style="color: #FFC56D;font-size: 14px" className="parameter-info">REQUIRED</span> <span className="parameter-info">String</span>
 
-<p className="p-text">file name (e.g starbucks.jpg)</p>
+<p className="p-text">The filename of the image being sent for processing (e.g starbucks.jpg).</p>
 
 ---
 
 <span className="parameter-text">file_data</span> <span style="color: #FFC56D;font-size: 14px" className="parameter-info">REQUIRED</span> <span className="parameter-info">File</span>
 
-<p className="p-text">Base64 encoded file</p>
+<p className="p-text">The Base64 encoded file being sent for processing.</p>
