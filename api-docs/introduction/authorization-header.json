@@ -3,7 +3,3 @@
 "content": [["AUTHORIZATION: \"apikey USERNAME:API_KEY\""]]
 }
 
-{
-"title": "This is how your authorization field should look: ",
-"content": [["AUTHORIZATION: \"apikey USERNAME:API_KEY\""]]
-}
