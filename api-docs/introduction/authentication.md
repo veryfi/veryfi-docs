@@ -6,7 +6,7 @@
 the correct credentials. Make a copy of your <span style="font-weight: 700">CLIENT_ID</span>
 , <span style="font-weight: 700">Username</span>, and <span style="font-weight: 700">API Key</span> and paste them into their 
 respective <a href='#new-api-docs-client-header' style="color: #8B99EE;">Client</a> and <a href='#new-api-docs-authorization-header' style="color: #8B99EE;">Authorization</a> 
-locations.</p>
+locations</p>
 
 <p className="p-text-list">1. Go to <a href='/api/settings/keys/' style="color: #8B99EE;">Keys</a> 
 section in <a href='/api/settings/keys/' style="color: #8B99EE;">Settings</a></p>
