@@ -3,7 +3,7 @@
 <p className="p-text">To be able to make a request to Veryfi, you need a URL that consists of two parts: <span style="font-weight: 700">ENVIROMENT_URL</span> and <span style="font-weight: 700">ENDPOINT_URL</span>, 
 Check the documentation below for the endpoint that best fits your business needs.</p>
 
-<h5 className="h5-title">Required Variables</h5>
+<h5 className="h5-title">Required Keys</h5>
 
 ---
 <span className="parameter-text">ENVIROMENT_URL</span> <span style="color: #FFC56D;font-size: 14px" className="parameter-info">REQUIRED</span> <span className="parameter-info">String</span>
