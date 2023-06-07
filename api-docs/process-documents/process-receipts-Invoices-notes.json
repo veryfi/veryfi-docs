@@ -1,7 +1,7 @@
 {
   "title": "Note",
   "content": [
-    ["JPEG/JPG, PNG, and PDF are some of the"],
+    ["JPEG/JPG, PNG, and PDF are some of thee"],
     ["To process multiple files as a single document, submit a ZIP containing all the related files.", "https://faq.veryfi.com/en/articles/6243055-processing-zip-files"],
     ["To process a PDF with multiple documents inside separately, check out PDF Splitter API.", "https://faq.veryfi.com/en/articles/6311471-pdf-splitter-api"],
     ["When submitting PDF documents containing more than 15 pages, only the first 15 pages will be read.", "https://faq.veryfi.com/en/articles/6483569-max_pages_to_process-explained"],
