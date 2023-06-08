@@ -6,7 +6,7 @@ documents are processed and ready to be consumed.</p>
 
 <p className="p-text">This asynchronous flow is achieved with the use of <a href="#set-webhooks-new-api-docs" style="color: #8B99EE"> Webhooks </a>.</p>
 
-<h2 className="p-text"> Asynchronous Processing Workflow: </h2>
+<h5 className="p-text"> Asynchronous Processing Workflow: </h5>
 
 1. <p className="p-text"> Document is submitted for processing with the async switch turned on.</p>
 2. <p className="p-text">Veryfi processes the document</p>
