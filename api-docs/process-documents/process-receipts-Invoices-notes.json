@@ -1,7 +1,7 @@
 {
   "title": "Note",
   "content": [
-    ["JPEG/JPG, PNG, and PDF are some of the accepted file formats.", "https://faq.veryfi.com/en/articles/6243055-processing-zip-files"],
+    [<p className="p-text">The unique identifier of the document. The JSON request body for a <a href="https://app.veryfi.com/api/docs/api-docs-process-asynchronous/#receive-webhook-new-api-docs" style="color: #8B99EE">successful webhook request</a> will contain the Document's id.</p>],
     ["Youuu can submit a zip containing all the related files to process multiple files as a single", "https://faq.veryfi.com/en/articles/6243055-processing-zip-files"],
     ["Check out the PDF Splitter API to process a PDF with multiple documents.", "https://faq.veryfi.com/en/articles/6311471-pdf-splitter-api"],
     ["See file requirements to learn how accuracy depends on the image's quality and clarity.", "https://faq.veryfi.com/en/articles/6171105-file-requirements"]
