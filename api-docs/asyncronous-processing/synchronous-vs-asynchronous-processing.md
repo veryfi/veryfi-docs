@@ -7,4 +7,4 @@
 ---
 <span className="parameter-text">async</span> <span style="color: #FFC56D;font-size: 14px" className="parameter-info">REQUIRED</span> <span className="parameter-info">Boolean</span>
 
-<p className="p-text">Optional switch to enable asynchronous processing mode (false by default).</p>
+<p className="p-text">Optional flag to enable asynchronous processing mode (false by default).</p>
