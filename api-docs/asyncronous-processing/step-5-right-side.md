@@ -3,4 +3,4 @@
 ---
 <span className="parameter-text">document_id</span> <span style="color: #FFC56D;font-size: 14px" className="parameter-info">REQUIRED</span>
 
-<p className="p-text">A document ID can be found by accessing <a href="#receive-webhook-new-api-docs" style="color: #8B99EE">data.id</a> in the JSON request body for the <a href="#receive-webhook-new-api-docs" style="color: #8B99EE">Successful</a> Webhook request.</p>
+<p className="p-text">The unique identifier of the document. The JSON request body for a <a href="https://app.veryfi.com/api/docs/api-docs-process-asynchronous/#receive-webhook-new-api-docs" style="color: #8B99EE"> will contain the Document's id.</p>
