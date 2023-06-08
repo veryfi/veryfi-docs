@@ -5,25 +5,11 @@
     "value": "1",
     "example": "import hashlib\nimport hmac\nimport base64\nfrom typing import *\n\ndef create_signature(data_payload: Dict, client_secret: str) -> str:\n    signature = hmac.new(\n        client_secret.encode(\"utf-8\"), msg=str(data_payload).encode(\"utf-8\"), digestmod=hashlib.sha256\n    ).digest()\n    base64_signature = str(base64.b64encode(signature), \"utf-8\").strip()\n    return base64_signature\n\ngenerated_signature = create_signature(payload[\"data\"], client_secret)\n\n# Confirm that the generated signature equals the validation signature\n# from the x-veryfi-signature header\nis_valid = generated_signature == validation_signature"
   },
-  {
-    "codeLanguage": "JAVASCRIPT",
-    "language": "javascript",
-    "value": "2",
-    "example": "function createSignature(payload, clientSecret) {
- return crypto
-   .createHmac("sha256", clientSecret)
-   .update(
-     JSON.stringify(payload.data)
-       .replace(/,/g, ", ")
-       .replace(/":/g, '": ')
-       .replace(/"/g, "'")
-   )
-   .digest("base64");
+{
+  "codeLanguage": "JAVASCRIPT",
+  "language": "javascript",
+  "value": "2",
+  "example": "function createSignature(payload, clientSecret) {\n return crypto\n   .createHmac(\"sha256\", clientSecret)\n   .update(\n     JSON.stringify(payload.data)\n       .replace(/,/g, \", \")\n       .replace(/\":/g, '\": ')\n       .replace(/\"/g, \"'\")\n   )\n   .digest(\"base64\");\n}\n\n\nconst generatedSignature = createSignature(payload, clientSecret);\nconst isValid = generatedSignature === validationSignature;"
 }
 
-
-const generatedSignature = createSignature(payload, clientSecret);
-const isValid = generatedSignature === validationSignature;
-"
-  }
 ]
