@@ -4,5 +4,11 @@
     "language": "python",
     "value": "1",
     "example": "import hashlib\nimport hmac\nimport base64\nfrom typing import *\n\ndef create_signature(data_payload: Dict, client_secret: str) -> str:\n    signature = hmac.new(\n        client_secret.encode(\"utf-8\"), msg=str(data_payload).encode(\"utf-8\"), digestmod=hashlib.sha256\n    ).digest()\n    base64_signature = str(base64.b64encode(signature), \"utf-8\").strip()\n    return base64_signature\n\ngenerated_signature = create_signature(payload[\"data\"], client_secret)\n\n# Confirm that the generated signature equals the validation signature\n# from the x-veryfi-signature header\nis_valid = generated_signature == validation_signature"
+  },
+  {
+    "codeLanguage": "JAVASCRIPT",
+    "language": "javascript",
+    "value": "3",
+    "example": "import javax.crypto.Mac;\nimport javax.crypto.spec.SecretKeySpec;\nimport java.nio.charset.StandardCharsets;\nimport java.security.InvalidKeyException;\nimport java.security.NoSuchAlgorithmException;\nimport java.util.Base64;\nimport java.util.Date;\n​\npublic String getSignature() {\n    String clientSecret = \"CLIENT_SECRET\";\n    String userId = \"USER_ID\";\n    ​\n    \/\/ Build signature\n    Date date = new Date();\n    long timeStamp = date.getTime();\n    String message = \"timestamp:\" + timeStamp + \",user_id:\" + userId;\n    SecretKeySpec keySpec = new SecretKeySpec(clientSecret.getBytes(StandardCharsets.UTF_8), \"HmacSHA256\");\n    Mac mac;\n    try {\n        mac = Mac.getInstance(\"HmacSHA256\");\n    } catch (NoSuchAlgorithmException e) {\n        return e.getMessage();\n    }\n    try {\n        mac.init(keySpec);\n    } catch (InvalidKeyException e) {\n        return  e.getMessage();\n    }\n    byte[] rawHmac = mac.doFinal(message.getBytes(StandardCharsets.UTF_8));\n    String base64SignatureEncoded = Base64.getEncoder().encodeToString(rawHmac);\n\n    return base64SignatureEncoded;\n}"
   }
 ]
