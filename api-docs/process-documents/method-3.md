@@ -1,4 +1,4 @@
-<h3 className="h3-title" id="using-a-url-new-api-docs">Method 3: Process file using URL</h3>
+<h3 className="h3-title" id="using-a-url-new-api-docs">Method 3: Process a file using a URL</h3>
 
 <p className="p-text">Submit a request to process a file using a URL.</p>
 
