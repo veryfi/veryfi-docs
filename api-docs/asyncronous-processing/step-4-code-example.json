@@ -8,7 +8,22 @@
   {
     "codeLanguage": "JAVASCRIPT",
     "language": "javascript",
-    "value": "3",
-    "example": "import javax.crypto.Mac;\nimport javax.crypto.spec.SecretKeySpec;\nimport java.nio.charset.StandardCharsets;\nimport java.security.InvalidKeyException;\nimport java.security.NoSuchAlgorithmException;\nimport java.util.Base64;\nimport java.util.Date;\n​\npublic String getSignature() {\n    String clientSecret = \"CLIENT_SECRET\";\n    String userId = \"USER_ID\";\n    ​\n    \/\/ Build signature\n    Date date = new Date();\n    long timeStamp = date.getTime();\n    String message = \"timestamp:\" + timeStamp + \",user_id:\" + userId;\n    SecretKeySpec keySpec = new SecretKeySpec(clientSecret.getBytes(StandardCharsets.UTF_8), \"HmacSHA256\");\n    Mac mac;\n    try {\n        mac = Mac.getInstance(\"HmacSHA256\");\n    } catch (NoSuchAlgorithmException e) {\n        return e.getMessage();\n    }\n    try {\n        mac.init(keySpec);\n    } catch (InvalidKeyException e) {\n        return  e.getMessage();\n    }\n    byte[] rawHmac = mac.doFinal(message.getBytes(StandardCharsets.UTF_8));\n    String base64SignatureEncoded = Base64.getEncoder().encodeToString(rawHmac);\n\n    return base64SignatureEncoded;\n}"
+    "value": "2",
+    "example": "function createSignature(payload, clientSecret) {
+ return crypto
+   .createHmac("sha256", clientSecret)
+   .update(
+     JSON.stringify(payload.data)
+       .replace(/,/g, ", ")
+       .replace(/":/g, '": ')
+       .replace(/"/g, "'")
+   )
+   .digest("base64");
+}
+
+
+const generatedSignature = createSignature(payload, clientSecret);
+const isValid = generatedSignature === validationSignature;
+"
   }
 ]
