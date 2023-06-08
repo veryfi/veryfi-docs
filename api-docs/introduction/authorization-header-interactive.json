@@ -1,11 +1,11 @@
 {
   "title": "Interactive API",
   "content": [
-     [{
+     {
       "linkText": "Interactive API v8: Receipts & Invoices",
       "link": "https://app.veryfi.com/api/docs/interactive/v8/documents/",
       "endText": "test from the portal.",
       "startText": "The Interactive API is a convenient way to try API endpoints. Visit the"
-    }]
+    }
   ]
 }
