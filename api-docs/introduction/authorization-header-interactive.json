@@ -1,4 +1,4 @@
 {
   "title": "Interactive API",
-  "content": "The Interactive API is a convenient way to try API endpoints. Visit the [Interactive API v8: Receipts & Invoices test](https://app.veryfi.com/api/docs/interactive/v8/documents/) from the portal."
+  "content": [["AUTHORIZATION: \"apikey USERNAME:API_KEY\""]]
 }
