@@ -2,4 +2,4 @@
 
 <p className="p-text">All requests are done over TLS v1.2. TLS uses stronger encryption algorithms and has 
 the ability to work on different ports. Both SSL 2.0 and 3.0 have been deprecated by the IETF 
-(in 2011 and 2015, respectively). <a href='https://www.globalsign.com/en/blog/ssl-vs-tls-difference/' target="_blank" style="color: #8B99EE;">Learn More</a></p>
+(in 2011 and 2015, respectively). Ref: <a href='https://www.globalsign.com/en/blog/ssl-vs-tls-difference/' target="_blank" style="color: #8B99EE;">https://www.globalsign.com/en/blog/ssl-vs-tls-difference/</a></p>
