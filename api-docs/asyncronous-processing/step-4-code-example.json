@@ -1,14 +1,14 @@
 [
-  {
-    "codeLanguage": "PYTHON",
-    "language": "python",
-    "value": "1",
-    "example": "import hashlib\nimport hmac\nimport base64\nfrom typing import *\n\ndef create_signature(data_payload: Dict, client_secret: str) -> str:\n    signature = hmac.new(\n        client_secret.encode(\"utf-8\"), msg=str(data_payload).encode(\"utf-8\"), digestmod=hashlib.sha256\n    ).digest()\n    base64_signature = str(base64.b64encode(signature), \"utf-8\").strip()\n    return base64_signature\n\ngenerated_signature = create_signature(payload[\"data\"], client_secret)\n\n# Confirm that the generated signature equals the validation signature\n# from the x-veryfi-signature header\nis_valid = generated_signature == validation_signature"
-  },
-  {
-    "codeLanguage": "PHP",
-    "language": "php",
-    "value": "2",
-    "example": "<?php\nfunction arrayToPythonDictString($arr) {\n    $items = [];\n    foreach ($arr as $key => $value) {\n        $items[] = \"'\" . $key . \"': \" . $value;\n    }\n    return \"{\" . implode(\", \", $items) . \"}\";\n}\nfunction create_signature($data_payload, $client_secret) {\n    $data_string = arrayToPythonDictString($data_payload);\n    $signature = hash_hmac('sha256', $data_string, $client_secret, true);\n    $base64_signature = base64_encode($signature);\n    return trim($base64_signature);\n}\n\n$generated_signature = create_signature($payload[\"data\"], $client_secret);\n\n// Confirm that the generated signature equals the validation signature\n// from the x-veryfi-signature header\n$is_valid = ($generated_signature === $validation_signature);\n\n?>"
-  },
+   {
+      "codeLanguage":"PYTHON",
+      "language":"python",
+      "value":"1",
+      "example":"import hashlib\nimport hmac\nimport base64\nfrom typing import *\n\ndef create_signature(data_payload: Dict, client_secret: str) -> str:\n    signature = hmac.new(\n        client_secret.encode(\"utf-8\"), msg=str(data_payload).encode(\"utf-8\"), digestmod=hashlib.sha256\n    ).digest()\n    base64_signature = str(base64.b64encode(signature), \"utf-8\").strip()\n    return base64_signature\n\ngenerated_signature = create_signature(payload[\"data\"], client_secret)\n\n# Confirm that the generated signature equals the validation signature\n# from the x-veryfi-signature header\nis_valid = generated_signature == validation_signature"
+   },
+   {
+      "codeLanguage":"PHP",
+      "language":"php",
+      "value":"2",
+      "example":"<?php\nfunction arrayToPythonDictString($arr) {\n    $items = [];\n    foreach ($arr as $key => $value) {\n        $items[] = \"'\" . $key . \"': \" . $value;\n    }\n    return \"{\" . implode(\", \", $items) . \"}\";\n}\nfunction create_signature($data_payload, $client_secret) {\n    $data_string = arrayToPythonDictString($data_payload);\n    $signature = hash_hmac('sha256', $data_string, $client_secret, true);\n    $base64_signature = base64_encode($signature);\n    return trim($base64_signature);\n}\n\n$generated_signature = create_signature($payload[\"data\"], $client_secret);\n\n// Confirm that the generated signature equals the validation signature\n// from the x-veryfi-signature header\n$is_valid = ($generated_signature === $validation_signature);\n\n?>"
+   }
 ]
