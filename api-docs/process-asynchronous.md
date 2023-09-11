@@ -54,7 +54,8 @@ Within seconds of submitting a document for processing you will receive a webhoo
     "event": "document.failed",
     "data": {
         "id": 123456789,
-        "created": "2021-10-20 15:27:26"
+        "created": "2021-10-20 15:27:26",
+        “error”: “<reason for failure>”
     }
 }
 ```
